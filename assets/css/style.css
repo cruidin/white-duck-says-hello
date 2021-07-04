@@ -12,6 +12,9 @@ body {
 }
 
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   color: white;
   margin: 30px;
 }
@@ -20,12 +23,15 @@ h2 {
   font-size: 80%;
 }
 
+#logo {
+  height: 80px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 100px 20px;
-
 }
 
 .box {
