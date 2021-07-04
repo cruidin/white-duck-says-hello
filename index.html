@@ -9,11 +9,15 @@
 <body>
   <div class="header">
 
-    <!-- make white duck clickable and change background color when clicked on -->
+    <h1>White Duck says hello!</h1>
 
-    <h1>White Duck says hello!</h1><img id="logo" src="./assets/images/White-duck.png"
-    alt="">
+    <!-- make white duck clickable and change background color when clicked on
+  how to make an image act as a button in js https://www.javascript-coder.com/button/javascript-button-p1/ -->
 
+<a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
+    <img name="jsbutton" id="logo" class="color" src="./assets/images/White-duck.png"
+    alt="javascript button">
+</a>
   </div>
 
   <div class="container">
@@ -29,11 +33,11 @@
     <div class="box" id="third-box">
       <img id="" src="./assets/images/Pink.png" alt="">
     </div>
-
+<!--
     <div class="box" id="fourth-box">
       <img id="" src="./assets/images/Yellow.png" alt="">
     </div>
-
+-->
   </div>
 
   <footer>
