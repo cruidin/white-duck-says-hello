@@ -36,9 +36,12 @@ h2 {
 
 .box {
   flex: 30%;
-  margin: 100px;
-  height: 600px;
-  background-color: white;
+  margin: 50px;
+}
+
+img,
+.box {
+  height: 300px;
 }
 
 
@@ -54,16 +57,18 @@ footer {
 
 @media screen and (max-width: 1800px) {
    .box {
+     display: flex;
+     flex-wrap: wrap;
      flex: 30%;
      margin: 50px;
-     height: 400px;
-     background-color: white;
   }
 }
 
 @media screen and (max-width: 992px) {
    .box {
+    display: flex;
     flex: 50%;
+    flex-wrap: wrap;
     margin: 30px;
   }
 }
