@@ -17,10 +17,21 @@ body {
   align-items: center;
   color: white;
   margin: 30px;
+  width: 400px;
+}
+a,
+h1 {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
-h2 {
-  font-size: 80%;
+a:hover {
+  font-family: "Big Shoulders Stencil Display", cursive;
+  color: orange;
+  text-decoration: none;
 }
 
 #click-logo {
@@ -30,6 +41,13 @@ h2 {
 
 #logo {
   height: 80px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .container {
@@ -60,14 +78,20 @@ footer {
   color: white;
   text-align: right;
   margin: 30px;
+
 }
+
 
 @media screen and (max-width: 1800px) {
    .box {
      display: flex;
      flex-wrap: wrap;
      flex: 30%;
-     margin: 50px;
+     margin: 0;
+  }
+  img,
+  .box {
+    height: 200px;
   }
 }
 

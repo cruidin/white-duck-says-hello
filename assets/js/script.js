@@ -1,7 +1,9 @@
-// Click on the duck and change background colour
-
-// background color options - change later to match color palette
-const colors = ['pink', 'blue', 'green', 'yellow', 'lilac', 'orange', 'red'];
+var colors = ['pink', 'blue', 'green', 'yellow', 'lilac', 'orange', 'red'];
+var i = 0;
+document.querySelector('button').addEventListener('click', function() {
+  i = i < colors.length ? ++i : 0;
+document.querySelector('body').style.background = colors[i]
+})
 
 // clickable logo - code from https://www.javascript-coder.com/button/javascript-button-p1/
 var logoImage = document.images["jsbutton"];
@@ -16,24 +18,3 @@ var logoImage = document.images["jsbutton"];
  function changeImageBack() {
    document.images['jsbutton'].src ="./assets/images/White-duck.png"
  }
-
-//const clickLogo = document.getElementById('click-logo');
-
-// background colour query selector
-const color = document.querySelector('color')
-
-// Event Listener function goes here
-clickLogo.addEventListener('click', function() {
-  let bgColor = "";
-  for(let i = 0; i < colors.length; i++) {
-    bgColor += colors[getRandomNumber()];
-  }
-  color.textContent = bgColor;
-  document.getElementById('header').style.backgroundColor = bgColor;
-});
-
-// return code
-function getRandomNumber() {
-  return Math.floor(Math.random() * colors.lenght);
-}
-// Click on each individual box and change content of it
