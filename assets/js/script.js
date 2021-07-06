@@ -2,7 +2,7 @@
 
 // Change Background Color On Click - HTML CSS and Javascript - https://www.youtube.com/watch?v=Wj9JpCuMV60
 
-var colors = ['#FF5733', '#FF6C4D', '#FF8166', '#FF9680', '#FFAB99', '#DEFF33', '#9EE178', '#C2ECAB'];
+var colors = ['#FF5733', '#17B992', '#B917A8', '#B99D17', '#17B91F', '#9bb514', '#58668a', '#6a8a58', '#378263', '#37827B'];
 var i = 0;
 document.querySelector('button').addEventListener('click', function() {
   i = i < colors.length ? ++i : 0;
@@ -127,7 +127,9 @@ function randomValueFromArray(array){
 
 // basic text does not change
 
-let storyText = "Once upon a time :insert1:. :insert2: because :insert3: But the day after :insert4: Then finally :insert5: and all people were :insert6: ever after. The end." ;
+let linebreak = '\n';
+
+let storyText = "Once upon a time :insert1:. \n :insert2: because :insert3: \n But the day after :insert4: \n Then finally :insert5: and all people were :insert6: ever after. \n The end.";
 
 // parts of text that change randomly
 
