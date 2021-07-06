@@ -10,28 +10,42 @@
   <div class="header">
 
     <!-- make white duck clickable and change background color when clicked on
-  how to make an image act as a button in js https://www.javascript-coder.com/button/javascript-button-p1/ -->
+  how to make an image act as a button in js
+  https://www.javascript-coder.com/button/javascript-button-p1/ -->
 
 <button>
   <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
-      <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color" src="./assets/images/White-duck.png"
+      <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
+        src="./assets/images/White-duck-outline.png"
       alt="javascript button"></h1>
   </a>
 </button>
+  </div>
+  <div class="" id="text"> <h3>White Duck likes to have fun!</h3>
+    <p>And he wants YOU to hava a good time too. So why don't you relax
+      and have a bit of fun? Click on each square to generate a new story</p>
+
   </div>
 
   <div class="container">
 
     <div class="box" id="first-box">
-      <img class="box-image" src="./assets/images/Blue.png" alt="">
+      <button id="firstBtn" type ="button" onclick="displayImage()">
+
+        <img class="box-image" id="firstImage" src="./assets/images/Blue.png" alt="">
+        </button>
     </div>
 
     <div class="box" id="second-box">
-      <img class="" src="./assets/images/Green.png" alt="">
+  <button id="secondBtn" type ="button" onclick="displayImage()">
+     <img class="" id="secondImage" src="./assets/images/Green.png" alt="">
+</button>
     </div>
 
     <div class="box" id="third-box">
-      <img class="" src="./assets/images/Pink.png" alt="">
+<button id="thirdBtn" type ="button" onclick="displayImage()">
+    <img class="" id="thirdImage" src="./assets/images/Pink.png" alt="">
+    </button>
     </div>
 <!--
     <div class="box" id="fourth-box">
@@ -39,7 +53,17 @@
     </div>
 -->
   </div>
+  <div id="story-box">
 
+
+    <div>
+      <button class="random-story" type ="button" onclick="displayImage()">
+        <img id="story-box-duck" src="./assets/images/White-duck.png"
+      alt=""></button>
+    </div>
+  <p class="story"></p>
+
+</div>
   <footer>
 
     <div class="footer">

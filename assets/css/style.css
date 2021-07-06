@@ -50,6 +50,20 @@ button {
   cursor: pointer;
 }
 
+#text {
+  width: 70%;
+}
+
+#text,
+h3 {
+  color: white;
+}
+
+#text,
+p {
+  color: white;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -67,12 +81,27 @@ button {
 img,
 .box {
   height: 300px;
+  border-radius: 25%;
+}
+
+#story-box {
+  background-color: pink;
+  border-radius: 5%;
+  height: 200px;
+  width: 70%;
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#story-box-duck {
+  height: 100px;
 }
 
 
 footer {
   margin-top: 30px;
-  background-color: black;
 }
 
 .footer {
