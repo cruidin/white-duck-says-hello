@@ -200,13 +200,13 @@ All texts were written by me, Patricia Melo (developer and artist)
 
 *Note:* Even though the best efforts have been made to ackowledge all the websites, articles and codes used for this project, it is possible that some of them haven't been listed here. If that is the case, I sincerely apologise.
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## Acknowledgements
 
 
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## About
 
@@ -214,6 +214,6 @@ My name is Patricia Melo. I am an artist and I am a Software Development student
 
 *******
 
-![love](/assets/README-docs/White-duck-quack2.jpg)
+![love](/assets/images/White-duck-quack2.jpg)
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
