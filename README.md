@@ -45,7 +45,7 @@ It comprises of 4 different sections.
 
 This project was conceived as a response to our JavaScript Essentials Porfolio 2 project at The Code Institute for their Full Stack Web Development Program. It comprises of an interactive front-end website.
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## UX
 
@@ -133,7 +133,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 
 ￼
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## Features
 
@@ -147,7 +147,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 ### Future Features:
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## Final Product
 
@@ -166,14 +166,14 @@ For an overview of some of the thought process involved in drawing up a plan for
 ### Mobiles
 
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 
 ## Troubles
 
 
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## Technical Information
 
@@ -182,7 +182,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 * CSS3
 * JavaScript
 
-[Back to the top](#white-duck-says-hello!)
+[Back to the top](#white-duck-says-hello)
 
 ## Credits
 
@@ -214,6 +214,6 @@ My name is Patricia Melo. I am an artist and I am a Software Development student
 
 *******
 
-![love](/assets/images/White-duck-quack2.jpg)
+![love](/assets/images/White-duck-quack2.png)
 
 [Back to the top](#white-duck-says-hello)
