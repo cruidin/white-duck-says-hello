@@ -27,21 +27,12 @@ var logoImage = document.images["jsbutton"];
  // code for changing boxes. Each box will be independently changed when corresponding
  // button is clicked`
  const imageArray = [
-   "assets/images/bird-running-away.jpg",
-   "assets/images/birds-city.jpg",
-   "assets/images/birds-houses.jpg",
-   "assets/images/birds-park.jpg",
-   "assets/images/coffee.jpg",
-   "assets/images/drawing.jpg",
-   "assets/images/hide-and-seek.jpg",
-   "assets/images/logo.jpg",
-   "assets/images/portrait1.jpg",
-   "assets/images/portrait2.jpg",
-   "assets/images/walking.jpg",
-   "assets/images/what-is-bird.jpg"
+   "assets/images/the-fool.jpg",
+   "assets/images/the-magician.jpg",
+   "assets/images/the-high-priestess.jpg",
  ];
 
- const image = document.querySelector("#firstImage");
+const image = document.querySelector("#firstImage");
 const button = document.querySelector("#firstBtn");
 
 window.onload = () => generateRandomPicture(imageArray);
@@ -99,18 +90,7 @@ const imageArray3 = [
   "assets/images/what-is-bird.jpg"
 ];
 
-const image3 = document.querySelector("#thirdImage");
-const button3 = document.querySelector("#thirdBtn");
-
-window.onload = () => generateRandomPicture3(imageArray3);
-
-button3.addEventListener("click", () => generateRandomPicture3(imageArray3));
-
-function generateRandomPicture3(array){
- let randomNum = Math.floor(Math.random() * array.length);
- image3.setAttribute("src", array[randomNum]);
-}
-
+// third box
 // code for box where a random story is generated every time the duck is clicked on
 // from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator
 // variables and function definition
@@ -127,27 +107,32 @@ function randomValueFromArray(array){
 
 // basic text does not change
 
-let linebreak = '\n';
-
-let storyText = "Once upon a time :insert1:. \n :insert2: because :insert3: \n But the day after :insert4: \n Then finally :insert5: and all people were :insert6: ever after. \n The end.";
+let storyText = "Once upon a time :insert1:. :insert2: because :insert3: But the day after :insert4: Then finally :insert5: and all people were :insert6: ever after. The end.";
 
 // parts of text that change randomly
 
 let insert1 = ["there was a raging storm",
 "an apple hit a house",
-"the sky turned green"];
+"the sky turned green",
+"the dice was rolled",
+"a firefly was tired"];
 
 let insert2 = ["There was a terrible commotion amongst the people",
 "Everybody started to laugh",
-"The people scremed and shut their eyes"];
+"The people scremed and shut their eyes",
+"Nobody could understand what was going on",
+"Someone did a fart"];
 
 let insert3 = ["they were all hungry and tired.",
 "they wanted to dance all night long.",
-"the expiry date was last month."];
+"the expiry date was last month.",
+"everybody fainted.",
+"no one was harmed."];
 
 let insert4 = ["the moon disappeared.",
 "the flowers grew taller than the mountains.",
-"everything turned yellow."];
+"everything turned yellow.",
+"the grapes tasted funny."];
 
 let insert5 = ["the sky collapsed and squashed the world",
 "everyone decided to play rolly polly down the hill",
