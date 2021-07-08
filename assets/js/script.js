@@ -2,11 +2,33 @@
 
 // Change Background Color On Click - HTML CSS and Javascript - https://www.youtube.com/watch?v=Wj9JpCuMV60
 
-var colors = ['#FF5733', '#17B992', '#B917A8', '#B99D17', '#17B91F', '#9bb514', '#58668a', '#6a8a58', '#378263', '#37827B'];
+var colors = ['#FF5733', '#FFBD33', '#', '#', '#', '#33FFBD', '#FF5733', '#FF8A33', '#FFBD33', '#'];
 var i = 0;
 document.querySelector('button').addEventListener('click', function() {
   i = i < colors.length ? ++i : 0;
 document.querySelector('body').style.background = colors[i]
+})
+
+// change background color of #first-box
+var boxColors = ['#FEFDDC', '#EEFEDC', '#DDFEDC', '#DCFEEC', '#DCFEFD', 'DCEEFE'];
+
+document.querySelector('#first-box').addEventListener('click', function() {
+  i = i < boxColors.length ? ++i : 0;
+document.querySelector('#first-box').style.background = boxColors[i]
+})
+
+// change background color of #second-box
+
+document.querySelector('#second-box').addEventListener('click', function() {
+  i = i < boxColors.length ? ++i : 0;
+document.querySelector('#second-box').style.background = boxColors[i]
+})
+
+// change background color of #third-box
+
+document.querySelector('#third-box').addEventListener('click', function() {
+  i = i < boxColors.length ? ++i : 0;
+document.querySelector('#third-box').style.background = boxColors[i]
 })
 
 // clickable logo - code from https://www.javascript-coder.com/button/javascript-button-p1/

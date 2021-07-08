@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -7,10 +8,30 @@
 }
 
 body {
-  background-color: #12BA52;
+  background-color: black;
   font-family: 'Uchen', serif;
   margin: 50px 100px;
   font-size: 80%;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-child {
+  flex: 1;
+}
+
+.navbar-child:first-child {
+  margin-right: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 100px 30px 30px;
 }
 
 .container {
@@ -22,9 +43,11 @@ body {
 }
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  position: absolute;
+    left: 70%;
+    top: 20%;
+    transform: translate(-60%, -90%);
+    margin-top: 100px;
   color: white;
   margin: 30px;
   width: 400px;
@@ -64,9 +87,20 @@ button {
 }
 
 #text {
-  width: 100%;
-  text-align: justify;
+  width: 80%;
+  text-align: left;
   margin: 0 50px 50px;
+  padding-top: 150px;
+  color: white;
+}
+
+#white-duck-icon {
+  height: 60px;
+}
+
+.title {
+  padding: 5px;
+  margin: 0;
 }
 
 h2 {
@@ -76,7 +110,7 @@ h2 {
 
 p {
   color: white;
-  font-family: 'Uchen', serif;
+  font-family: 'Roboto Mono', serif;
   font-size: 110%;
 }
 
@@ -95,8 +129,8 @@ img,
 .story-box {
   background-color: #ffffff;
   box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .2);
-  height: 500px;
-  width: 700px;
+  height: 300px;
+  width: 300px;
   padding: 100px;
   margin: 20px;
   display: flex;
@@ -107,12 +141,12 @@ img,
 }
 
 #first-box {
-background-color: #FFFAC2;
+background-color: #EEFFF5;
 border-radius: 33% 67% 58% 42% / 71% 37% 63% 29%;
 }
 
 #second-box {
-  background-color: #FFFAC2;
+  background-color: #EEFFF5;
 border-radius: 69% 31% 58% 42% / 36% 46% 54% 64%;
 }
 
@@ -122,14 +156,13 @@ border-radius: 100px 100px 0px 100px;
 }
 */
 
-#fourth-box {
-background-color: #FFFAC2;
+#third-box {
+background-color: #EEFFF5;
 border-radius: 27% 73% 43% 57% / 53% 51% 49% 47%;
 }
 
 .story {
-  color: #260303;
-  font-family: 'Uchen', serif;
+  color: green;
 }
 
 #story-box-duck {
@@ -139,18 +172,27 @@ border-radius: 27% 73% 43% 57% / 53% 51% 49% 47%;
 
 footer {
   margin-top: 30px;
+  padding: 100px 50px 10px;
+  position: relative;
 }
 
 .footer {
   color: white;
   text-align: right;
   margin: 30px;
-
 }
 
+.contact {
+  font-family: 'Roboto Mono', serif;
+  font-size: 50%;
+  color: #FEFDDC;
+  text-align: center;
+}
 
 @media screen and (max-width: 1800px) {
-   .box {
+
+
+  .box {
      display: flex;
      flex-wrap: wrap;
      flex: 30%;

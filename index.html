@@ -7,84 +7,111 @@
 </head>
 
 <body>
+  <div class="navbar-container">
 
+  <div class="navbar-child links"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</div>
 
+      <div class="navbar-child header">
+
+        <!-- make white duck clickable and change background color when clicked on
+        how to make an image act as a button in js
+        https://www.javascript-coder.com/button/javascript-button-p1/ -->
+
+        <div>
+          <button>
+            <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
+              <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
+                src="./assets/images/White-duck-outline.png"
+                alt="javascript button">
+              </h1>
+            </a>
+          </button>
+        </div>
+
+        </div>
+</div>
+        <div class="" id="text"> <h2>How to use this site</h2><br>
+          <p>White Duck has been learning some new JavaScript trick and he wants
+            to show them to you. <br> Whenever you see this icon <img id="white-duck-icon" src="./assets/images/White-duck-outline.png"
+            alt=""> you can click on it and see what happens! But be aware: he might be disguised!</p>
+
+        </div>
 
   <div class="container">
 
-    <div class="header">
 
-      <!-- make white duck clickable and change background color when clicked on
-    how to make an image act as a button in js
-    https://www.javascript-coder.com/button/javascript-button-p1/ -->
-  <div>
-  <button>
-    <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
-        <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
-          src="./assets/images/White-duck-outline.png"
-        alt="javascript button"></h1>
-    </a>
-  </button>
-  </div>
-  <div id="reload"> <a href="index.html"><h3>Reload</h3></a>
-    </div>
-    </div>
-  <!--  <div class="" id="text"> <h2>White Duck likes to have fun!</h2><br>
-      <p>And he wants YOU to have a good time too. So why don't you relax
-        and have a bit of fun? <br> Click on each square to generate a new story</p>
+      <div class="story-box" id="first-box">
+          <div class="title"><h2>Try your luck!</div>
+            <button id="firstBtn" type ="button"><img id="story-box-duck" src="./assets/images/White-duck-outline.png"
+            alt="">
 
-    </div> -->
-    <div class="story-box" id="first-box">
-      <div><h2>Try your luck!</div>
-      <button id="firstBtn" type ="button" onclick="displayImage()">
+              </button>
+              <img class="box-image" id="firstImage" src="./assets/images/Blue.png" alt="">
 
-        <img class="box-image" id="firstImage" src="./assets/images/Blue.png" alt="">
-        </button>
-    </div>
+          </div>
 
-    <div class="story-box" id="second-box">
-      <div><h2>Fun facts!</div>
-  <button id="secondBtn" type ="button" onclick="displayImage()">
-     <img class="" id="secondImage" src="./assets/images/Green.png" alt="">
-</button>
-    </div>
+          <div class="story-box" id="second-box">
+            <div class="title"><h2>Fun facts!</div>
 
-  <!--  <div class="story-box" id="third-box">
-      <div><h2>Story Time!</div>
-<button id="thirdBtn" type ="button" onclick="displayImage()">
-    <img class="" id="thirdImage" src="./assets/images/Pink.png" alt="">
-    </button>
-    </div>
--->
+              <button id="secondBtn" type ="button"><img id="story-box-duck" src="./assets/images/White-duck-outline.png"
+              alt="">
+                </button>
+                <img class="" id="secondImage" src="./assets/images/Green.png" alt="">
+
+          </div>
+
+            <!--  <div class="story-box" id="third-box">
+            <div><h2>Story Time!</div>
+            <button id="thirdBtn" type ="button" onclick="displayImage()">
+            <img class="" id="thirdImage" src="./assets/images/Pink.png" alt="">
+          </button>
+        </div>
+      -->
 
 
-<div class="story-box" id="fourth-box">
-<div><h2>Story Time!</div>
+      <div class="story-box" id="third-box">
+        <div class="title"><h2>Story Time!</div>
 
-  <div>
-    <button class="random-story" type ="button" onclick="displayImage()">
-      <img id="story-box-duck" src="./assets/images/White-duck-outline.png"
-    alt=""></button>
-  </div>
-<p class="story">White Duck is ready to tell you a story. Are you ready?</p>
+          <div>
+            <button class="random-story" type ="button">
+              <img id="story-box-duck" src="./assets/images/White-duck-outline.png"
+              alt=""></button>
+            </div>
+            <p class="story">White Duck is ready to tell you a story.
+              A silly one, probably. Are you ready? Click on White Duck to generate
+            a fun story!</p>
 
-</div>
+          </div>
 
 
-  <footer>
+          <footer>
 
-    <div class="footer">
+            <div class="footer">
 
-    <div>  <h1>White Duck says bye!</h1> </div>
-      <br>
-    <div>  <h2>But he's sad to see you go.</h2></div>
+              <div>  <h1>White Duck says bye!</h1> </div>
+              <br>
+              <div>  <h2>But he's sad to see you go.</h2></div>
 
-    </div>
+              <div class="contact">
+<ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="contact.asp" target="_blank">Github</a></li>
+                  <li><a href="about.asp" target="_blank">Instagram</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
 
-  </footer>
+              </div>
 
-  <!-- javascript -->
-  <script src="./assets/js/script.js"></script>
+            </div>
 
-</body>
-</html>
+          </footer>
+
+          <!-- javascript -->
+          <script src="./assets/js/script.js"></script>
+
+        </body>
+        </html>

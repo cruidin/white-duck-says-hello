@@ -196,6 +196,26 @@ All texts were written by me, Patricia Melo (developer and artist)
 
 ### Websites Consulted
 
+* [Font Awesome](https://fontawesome.com/icons/instagram-square?style=brands)
+* [W3Schools](https://www.w3schools.com/)
+https://htmlcolorcodes.com/color-picker/
+https://css-tricks.com/lots-of-ways-to-use-math-random-in-javascript/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/
+https://www.thoughtco.com/moving-javascript-out-of-the-web-page-2037542
+https://www.codegrepper.com/code-examples/javascript/change+image+background+color+javascript
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator
+https://blog.logrocket.com/how-to-create-fancy-corners-in-css/
+https://9elements.github.io/fancy-border-radius/#53.27.51.57--.
+https://www.diffchecker.com/diff
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.javatpoint.com/random-image-generator-in-javascript
+https://stackoverflow.com/questions/41667237/making-an-array-of-file-paths-in-javascript
+https://www.javascript-coder.com/button/javascript-button-p1/
+https://www.learnenough.com/
+https://www.youtube.com/channel/UCl0hPcsUmeld49qmWWSQKOg/playlists
+https://www.freecodecamp.org/news/javascript-projects-for-beginners/
+https://errorsea.com/how-to-change-text-onclick-event-javascript/
 
 
 *Note:* Even though the best efforts have been made to ackowledge all the websites, articles and codes used for this project, it is possible that some of them haven't been listed here. If that is the case, I sincerely apologise.
