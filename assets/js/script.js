@@ -1,6 +1,6 @@
 // color names need to be updated to match palette
 
-// Change Background Color On Click - HTML CSS and Javascript - https://www.youtube.com/watch?v=Wj9JpCuMV60
+// Change Background Color - HTML CSS and Javascript - https://www.youtube.com/watch?v=Wj9JpCuMV60
 
 var colors = ['#FF5733', '#FFBD33', '#', '#', '#', '#33FFBD', '#FF5733', '#FF8A33', '#FFBD33', '#'];
 var i = 0;
@@ -172,3 +172,29 @@ function result() {
   story.style.visibility = 'visible';
 
   }
+
+// Get the modal by ID
+var modal = document.getElementById("myModal");
+
+// Get the button 'How to use this site' that opens the modal
+var btn = document.getElementById("howTo");
+
+// This gets the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// This will open the modal when the user clicks on 'How to use this site'
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// This will close the modal when the user clicks on <span> (x)
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// The modal will close when user clicks anywhere outside of modal
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
