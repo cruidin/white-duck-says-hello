@@ -7,15 +7,15 @@
 </head>
 
 <body>
-  <div class="navbar">
-  <div><ul>
+  <div class="navbar-container">
+
+  <div class="navbar-child links"><ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="contact.asp" target="_blank">Github</a></li>
-    <li><a href="about.asp" target="_blank">Instagram</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
-</div>
-      <div class="header">
+  </div>
+
+      <div class="navbar-child header">
 
         <!-- make white duck clickable and change background color when clicked on
         how to make an image act as a button in js
@@ -25,18 +25,57 @@
           <button>
             <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
               <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
-                src="./assets/images/White-duck-outline.png"
+                src="./assets/images/white-duck-outline.png"
                 alt="javascript button">
               </h1>
             </a>
           </button>
         </div>
-          </div>
+
         </div>
 
-</div>
+  </div>
+  <div class="about-container">
+<div>
+  <h1>About</h1>
+  <p>Hi! My name is Patricia. I’m an artist and aspiring programmer and I’m the
+  creator of this simple website. My friend White Duck is the star of the show
+  though and he’s here to demonstrate some cool simple tricks that can be done in JavaScript.
+<br><br>
+If you wish to contact me you can fill out the form below or check out my Github
+and Instagram where you will find more of my art and coding projects.
+</p>
+</div>  <div>
+  <h1>Get in touch!</h1>
+  <!-- Form -->
 
-          <footer>
+    <!-- This form was made with a LOT of help from an article titled How to Build a Responsive Form with Flexbox from this site (sorry but the validator is complaining about the link having two consecutive hyphens. Link is included in README file) https://webdesign.tutsplus.com/tutorials/ and this article https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
+
+    <div class="container info">
+        <form>
+            <ul class="flex-outer">
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name here">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email here">
+                </li>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                </li>
+
+
+                <li>
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+  </form>  <footer>
 
             <div class="footer">
 
@@ -53,7 +92,7 @@
               </div>
 
             </div>
-
+</div>
           </footer>
 
           <!-- javascript -->

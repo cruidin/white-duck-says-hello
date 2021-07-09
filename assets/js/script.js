@@ -19,10 +19,6 @@ document.querySelector('#first-box').style.background = boxColors[i]
 
 // change background color of #second-box
 
-document.querySelector('#second-box').addEventListener('click', function() {
-  i = i < boxColors.length ? ++i : 0;
-document.querySelector('#second-box').style.background = boxColors[i]
-})
 
 // change background color of #third-box
 
@@ -37,21 +33,30 @@ var logoImage = document.images["jsbutton"];
 
 // to change image when mouse hovers
  function changeImage() {
-   document.images['jsbutton'].src = "./assets/images/White-duck-quack2.png";
+   document.images['jsbutton'].src = "./assets/images/white-duck-quack2.png";
    return true;
  }
 
 // to change back to the original image
  function changeImageBack() {
-   document.images['jsbutton'].src ="./assets/images/White-duck-outline.png"
+   document.images['jsbutton'].src ="./assets/images/white-duck-outline.png"
  }
 
  // code for changing boxes. Each box will be independently changed when corresponding
  // button is clicked`
  const imageArray = [
-   "assets/images/the-fool.jpg",
-   "assets/images/the-magician.jpg",
-   "assets/images/the-high-priestess.jpg",
+   "assets/images/white-duck-chill.png",
+   "assets/images/white-duck-chill2.png",
+   "assets/images/white-duck-glasses.png",
+   "assets/images/white-duck-glasses2.png",
+   "assets/images/white-duck-leaves.png",
+   "assets/images/white-duck-leaves2.png",
+   "assets/images/white-duck-love.png",
+   "assets/images/white-duck-love2.png",
+   "assets/images/white-duck-monocle.png",
+   "assets/images/white-duck-monocle2.png",
+   "assets/images/white-duck-outline.png",
+   "assets/images/white-duck-quack2.png",
  ];
 
 const image = document.querySelector("#firstImage");
@@ -66,34 +71,9 @@ function generateRandomPicture(array){
   image.setAttribute("src", array[randomNum]);
 }
 
-// second box
 
-const imageArray2 = [
-  "assets/images/bird-running-away.jpg",
-  "assets/images/birds-city.jpg",
-  "assets/images/birds-houses.jpg",
-  "assets/images/birds-park.jpg",
-  "assets/images/coffee.jpg",
-  "assets/images/drawing.jpg",
-  "assets/images/hide-and-seek.jpg",
-  "assets/images/logo.jpg",
-  "assets/images/portrait1.jpg",
-  "assets/images/portrait2.jpg",
-  "assets/images/walking.jpg",
-  "assets/images/what-is-bird.jpg"
-];
 
-const image2 = document.querySelector("#secondImage");
-const button2 = document.querySelector("#secondBtn");
 
-window.onload = () => generateRandomPicture2(imageArray2);
-
-button2.addEventListener("click", () => generateRandomPicture2(imageArray2));
-
-function generateRandomPicture2(array){
- let randomNum = Math.floor(Math.random() * array.length);
- image2.setAttribute("src", array[randomNum]);
-}
 
 // third box
 

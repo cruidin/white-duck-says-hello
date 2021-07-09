@@ -17,21 +17,16 @@ body {
 .navbar-container {
   display: flex;
   align-items: center;
+  padding: 100px;
 }
 
 .navbar-child {
-  flex: 1;
-}
-
-.navbar-child:first-child {
-  margin-right: 20px;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding: 100px 30px 30px;
 }
 
 .container {
@@ -43,13 +38,9 @@ ul {
 }
 
 .header {
-  position: absolute;
-    left: 70%;
-    top: 20%;
-    transform: translate(-60%, -90%);
-    margin-top: 100px;
+  padding-left: 100px;
+  margin-left: 50px;
   color: white;
-  margin: 30px;
   width: 400px;
   border-radius: 60% 40% 40% 20% / 70% 60% 30% 25%;
   box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .2);
@@ -89,8 +80,7 @@ button {
 #text {
   width: 80%;
   text-align: left;
-  margin: 0 50px 50px;
-  padding-top: 150px;
+  margin: 50px;
   color: white;
 }
 
@@ -127,7 +117,8 @@ img,
 }
 
 .story-box {
-  background-color: #ffffff;
+  background-color: white;
+  border
   box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .2);
   height: 300px;
   width: 300px;
@@ -141,10 +132,11 @@ img,
 }
 
 #first-box {
-background-color: #EEFFF5;
-border-radius: 33% 67% 58% 42% / 71% 37% 63% 29%;
+background-color: white;
+border-radius: 5% 5% 5% 5%;
 }
 
+/*
 #second-box {
   background-color: #EEFFF5;
 border-radius: 69% 31% 58% 42% / 36% 46% 54% 64%;
@@ -157,12 +149,12 @@ border-radius: 100px 100px 0px 100px;
 */
 
 #third-box {
-background-color: #EEFFF5;
-border-radius: 27% 73% 43% 57% / 53% 51% 49% 47%;
+background-color: white;
+border-radius: 5% 5% 5% 5%;
 }
 
 .story {
-  color: green;
+  color: black;
 }
 
 #story-box-duck {
@@ -172,8 +164,10 @@ border-radius: 27% 73% 43% 57% / 53% 51% 49% 47%;
 
 footer {
   margin-top: 30px;
-  padding: 100px 50px 10px;
+  padding: 100px 0 10px;
   position: relative;
+  width: 100%
+  background-color: black;
 }
 
 .footer {
@@ -188,6 +182,175 @@ footer {
   color: #FEFDDC;
   text-align: center;
 }
+
+/* about page */
+
+.about-container {
+  margin: 20px 100px;
+}
+
+/* form - the styles were taken from two sources and the styles were changed to match with the design of the website - 'W3Schools - CSS Responsive Form' and 'How to Build a Responsive Form with Flexbox' */
+
+/* code from https://www.w3schools.com/howto/howto_css_responsive_form.asp */
+
+.container form {
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+    background-color: #fff0f0;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+input {
+    outline-color: #94a798;
+}
+
+textarea {
+    outline-color: #94a798;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    vertical-align: top;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    padding: 15px 15px 15px 0;
+    display: inline;
+    float: right;
+}
+
+input[type=submit] {
+    background-color: #e4b9b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #67a35f;
+}
+
+/* code from https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767 */
+
+body form {
+    padding: 50px 0;
+}
+
+.container form {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+form p {
+    color: #67a35f;
+    background-color: transparent;
+}
+
+.flex-outer,
+.flex-inner {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-outer>li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: .09em;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 200px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+    flex: 1 0 220px;
+}
+
+.flex-outer li p {
+    margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+    padding: 15px;
+    border: none;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: small;
+    color: #c78f89;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #c78f89;
+    color: #f2f2f2;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
 
 @media screen and (max-width: 1800px) {
 
