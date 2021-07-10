@@ -2,131 +2,208 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+
+  <!-- Link to CSS page -->
+
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Title -->
+
   <title>White Duck Says Hello!</title>
 
 </head>
 
 <body>
+
+  <!-- Header contains Home and About links and a modal window with instructions
+  about the site -->
+
   <div class="navbar-container">
 
-  <div class="navbar-child links"><ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
+    <div class="navbar-child links"><ul>
 
-        <!-- Instruction on how to use site - this will open a modal -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
 
-        <li><button id="howTo"><h2>How to use this site</h2></button></li>
+      <!-- Instruction on how to use site - this will open a modal -->
 
-        <!-- The Modal -->
+      <li><button id="howTo"><h2>How to use this site</h2></button></li>
 
-        <div id="myModal" class="modal">
+      <!-- The Modal - the id #myModel is used in the JavaScript file using the
+      getElementById() method-->
 
-          <!-- content -->
+      <div id="myModal" class="modal">
 
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>White Duck has been learning some new JavaScript tricks and he wants
-              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon" src="./assets/images/White-duck-outline.png"
-              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+        <!-- content -->
+
+        <div class="modal-content">
+
+          <!-- the class .close is used in the JavaScript file using the
+          getElementsByClassName() method -->
+
+          <span class="close">&times;</span>
+
+          <!-- Paragraphs with instructions -->
+
+          <p>White Duck has been learning some new JavaScript tricks and he wants
+            to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
+            src="./assets/images/White-duck-outline.png"
+            alt=""> you can click on it and see what happens! But be aware: he might be disguised!
             <br>White Duck has been learning some new JavaScript tricks and he wants
-              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon" src="./assets/images/White-duck-outline.png"
-              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+            to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
+            src="./assets/images/White-duck-outline.png"
+            alt=""> you can click on it and see what happens! But be aware: he might be disguised!
             <br></p>
-          </div>
 
         </div>
+
+      </div>
+
       </ul>
+
     </div>
-      <div class="navbar-child header">
 
-        <!-- make white duck clickable and change background color when clicked on
-        how to make an image act as a button in js
-        https://www.javascript-coder.com/button/javascript-button-p1/ -->
+    <div class="navbar-child header">
 
-        <div>
-          <button class="white-duck">
-            <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
-              <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
-                src="./assets/images/white-duck-outline.png"
-                alt="javascript button">
-              </h1>
-            </a>
-          </button>
-        </div>
+      <!-- make white duck clickable and change background color when clicked on
+      how to make an image act as a button in js
+      https://www.javascript-coder.com/button/javascript-button-p1/ -->
 
-        </div>
+      <div>
+
+        <!-- The button is displayed as an icon - the class ".white-duck" is used
+        in the JavaScript file with the querySelector() method -->
+
+        <button class="white-duck">
+
+          <!-- When the mouse hovers the logo which consists of the words "White
+          Duck Says Hello!" on a blue background and the icon of a white duck, the
+          icon changes slightly and changes back to the original once mouse no
+          longer hovers. Two functions are needed for this as specified by the
+          onMouseOver and onMouseOut events -->
+
+          <a href="#" onMouseOver="return changeImage()" onMouseOut= "return
+          changeImageBack()">
+
+            <!-- Inside the img tag the name "jsbutton" is used in the JavaScript
+            file in the images read-only property format. In this case it returns a
+            specific image in this page as specified below in the src attribute-->
+
+            <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
+              src="./assets/images/white-duck-outline.png" alt="javascript button">
+            </h1>
+
+          </a>
+
+        </button>
+
+      </div>
+
+    </div>
 
   </div>
+
   <div class="about-container">
-<div>
-  <h1>About</h1>
-  <p>Hi! My name is Patricia. I’m an artist and aspiring programmer and I’m the
-  creator of this simple website. My friend White Duck is the star of the show
-  though and he’s here to demonstrate some cool simple tricks that can be done in JavaScript.
-<br><br>
-If you wish to contact me you can fill out the form below or check out my Github
-and Instagram where you will find more of my art and coding projects.
-</p>
-</div>
 
- <div id="form">
-  <h1>Get in touch!</h1>
-  <!-- Form -->
+    <div>
 
-    <!-- This form was made with a LOT of help from an article titled How to Build a Responsive Form with Flexbox from this site (sorry but the validator is complaining about the link having two consecutive hyphens. Link is included in README file) https://webdesign.tutsplus.com/tutorials/ and this article https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
+      <h1>About</h1>
 
-    <div class="container info">
-        <form>
-            <ul class="flex-outer">
-                <li>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name here *" required>
-                </li>
-                <li>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email here *" required>
-                </li>
-                <li>
-                    <label for="message">Message</label>
-                    <textarea rows="6" id="message" placeholder="Enter your message here *" required></textarea>
-                </li>
+      <p>Hi! My name is Patricia. I’m an artist and aspiring programmer and I’m the
+        creator of this simple website. My friend White Duck is the star of the show
+        though and he’s here to demonstrate some cool simple tricks that can be done in JavaScript.
+        <br><br>
+        If you wish to contact me you can fill out the form below or check out my Github
+        and Instagram where you will find more of my art and coding projects.
+      </p>
 
-
-                <li>
-                    <button type="submit">Submit</button>
-                </li>
-
-                <li>* Required fields</li>
-            </ul>
-        </form>
     </div>
 
-  </form>
+    <div id="form">
 
-</div>
+      <h1>Get in touch!</h1>
 
- <footer>
+      <!-- Form -->
 
-            <div class="footer">
+      <!-- This form was made with the help from an article titled How to Build a
+      Responsive Form with Flexbox from this site (sorry but the validator is
+      complaining about the link having two consecutive hyphens. Link is included in
+      README file) https://webdesign.tutsplus.com/tutorials/ and this article
+      https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
 
-              <div>  <h1>White Duck says bye!</h1> </div>
-              <br>
-              <div>  <h2>But he's sad to see you go.</h2></div>
+      <div class="container info">
+        <form>
+          <ul class="flex-outer">
+            <li>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter your name here *"
+              required>
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email here *"
+              required>
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea rows="6" id="message" placeholder="Enter your message here *"
+              required></textarea>
+            </li>
 
-              <div class="contact">
+            <li>
+              <button type="submit">Submit</button>
+            </li>
 
-                email
-                github
-                instagram
+            <li>* Required fields</li>
 
-              </div>
+          </ul>
 
-            </div>
-</div>
-          </footer>
+        </form>
 
-          <!-- javascript -->
-          <script src="./assets/js/script.js"></script>
-        </body>
-        </html>
+      </div>
+
+    </div>
+
+  <!-- The footer contains a farewell message from White Duck and links
+      to social media and Home and About pages -->
+
+  <footer>
+
+    <div class="footer">
+
+      <div>
+
+        <h1>White Duck says bye!</h1>
+
+      </div>
+
+                <br>
+      <div>
+
+        <h2>But he's sad to see you go.</h2>
+
+      </div>
+
+      <div class="contact">
+
+        <ul>
+
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.asp" target="_blank">Github</a></li>
+          <li><a href="about.asp" target="_blank">Instagram</a></li>
+          <li><a href="about.html">About</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Link to JavaScript file -->
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
