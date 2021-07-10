@@ -1,104 +1,66 @@
-// color names need to be updated to match palette
-
 // Change Background Color - HTML CSS and Javascript - https://www.youtube.com/watch?v=Wj9JpCuMV60
+// Variable with a selection of Hex colour codes
+var colors = ['#FF5733', '#FFBD33', '#334bff', '#FF5733', '#FF8A33', '#FFBD33',
+'#5e6aad', '#905ead', '#ad3e3e', '#55701f', '#1f7033', '#1f2a70', '#701f5e'];
 
-var colors = ['#FF5733', '#FFBD33', '#', '#', '#', '#33FFBD', '#FF5733', '#FF8A33', '#FFBD33', '#'];
 var i = 0;
-document.querySelector('button').addEventListener('click', function() {
+
+document.querySelector('.white-duck').addEventListener('click', function() {
   i = i < colors.length ? ++i : 0;
 document.querySelector('body').style.background = colors[i]
 })
 
-// change background color of #first-box
-var boxColors = ['#FEFDDC', '#EEFEDC', '#DDFEDC', '#DCFEEC', '#DCFEFD', 'DCEEFE'];
-
-document.querySelector('#first-box').addEventListener('click', function() {
-  i = i < boxColors.length ? ++i : 0;
-document.querySelector('#first-box').style.background = boxColors[i]
-})
-
-// change background color of #second-box
-
-
-// change background color of #third-box
-
-document.querySelector('#third-box').addEventListener('click', function() {
-  i = i < boxColors.length ? ++i : 0;
-document.querySelector('#third-box').style.background = boxColors[i]
-})
-
 // clickable logo - code from https://www.javascript-coder.com/button/javascript-button-p1/
 
-var logoImage = document.images["jsbutton"];
+var logoImage = document.images['jsbutton'];
 
 // to change image when mouse hovers
  function changeImage() {
-   document.images['jsbutton'].src = "./assets/images/white-duck-quack2.png";
+   document.images['jsbutton'].src = './assets/images/white-duck-quack2.png';
    return true;
  }
 
 // to change back to the original image
  function changeImageBack() {
-   document.images['jsbutton'].src ="./assets/images/white-duck-outline.png"
+   document.images['jsbutton'].src ='./assets/images/white-duck-outline.png'
  }
 
- // code for changing boxes. Each box will be independently changed when corresponding
- // button is clicked`
+ // code for changing boxes.
  const imageArray = [
-   "assets/images/white-duck-chill.png",
-   "assets/images/white-duck-chill2.png",
-   "assets/images/white-duck-glasses.png",
-   "assets/images/white-duck-glasses2.png",
-   "assets/images/white-duck-leaves.png",
-   "assets/images/white-duck-leaves2.png",
-   "assets/images/white-duck-love.png",
-   "assets/images/white-duck-love2.png",
-   "assets/images/white-duck-monocle.png",
-   "assets/images/white-duck-monocle2.png",
-   "assets/images/white-duck-outline.png",
-   "assets/images/white-duck-quack2.png",
+   'assets/images/white-duck-chill.png',
+   'assets/images/white-duck-chill2.png',
+   'assets/images/white-duck-glasses.png',
+   'assets/images/white-duck-glasses2.png',
+   'assets/images/white-duck-leaves.png',
+   'assets/images/white-duck-leaves2.png',
+   'assets/images/white-duck-love.png',
+   'assets/images/white-duck-love2.png',
+   'assets/images/white-duck-monocle.png',
+   'assets/images/white-duck-monocle2.png',
+   'assets/images/white-duck-outline.png',
+   'assets/images/white-duck-quack2.png',
  ];
 
-const image = document.querySelector("#firstImage");
-const button = document.querySelector("#firstBtn");
+const image = document.querySelector('#firstImage');
+const button = document.querySelector('#firstBtn');
 
 window.onload = () => generateRandomPicture(imageArray);
 
-button.addEventListener("click", () => generateRandomPicture(imageArray));
+button.addEventListener('click', () => generateRandomPicture(imageArray));
 
 function generateRandomPicture(array){
   let randomNum = Math.floor(Math.random() * array.length);
-  image.setAttribute("src", array[randomNum]);
+  image.setAttribute('src', array[randomNum]);
 }
 
-
-
-
-
-// third box
-
-const imageArray3 = [
-  "assets/images/bird-running-away.jpg",
-  "assets/images/birds-city.jpg",
-  "assets/images/birds-houses.jpg",
-  "assets/images/birds-park.jpg",
-  "assets/images/coffee.jpg",
-  "assets/images/drawing.jpg",
-  "assets/images/hide-and-seek.jpg",
-  "assets/images/logo.jpg",
-  "assets/images/portrait1.jpg",
-  "assets/images/portrait2.jpg",
-  "assets/images/walking.jpg",
-  "assets/images/what-is-bird.jpg"
-];
-
-// third box
+// second box
 // code for box where a random story is generated every time the duck is clicked on
 // from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator
 // variables and function definition
 
 let randomStory = document.querySelector('.random-story');
 let story = document.querySelector('.story');
+
 
 function randomValueFromArray(array){
   const random = Math.floor(Math.random() * array.length);
@@ -173,28 +135,35 @@ function result() {
 
   }
 
-// Get the modal by ID
-var modal = document.getElementById("myModal");
+// The Modal - a modal opens a window on the page
+// We create a variable with the method getElementById to return the element
+// that has the ID of myModal on index.html.
+var modal = document.getElementById('myModal');
 
-// Get the button 'How to use this site' that opens the modal
-var btn = document.getElementById("howTo");
+// We create another variable and use the method getElementById to get the button
+// 'How to use this site' that opens the modal.
+var modalButton = document.getElementById('howTo');
 
-// This gets the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// This variable gets the <span> element that closes the modal by using the method
+// getElementsByClassName.
+var span = document.getElementsByClassName('close')[0];
 
-// This will open the modal when the user clicks on 'How to use this site'
-btn.onclick = function() {
-  modal.style.display = "block";
+// This function will open the modal when the user clicks on 'How to use this site'.
+// The style.display property is set to 'block' which means the element is rendered
+// as a block-level. The onclick is being used here.
+modalButton.onclick = function() {
+  modal.style.display = 'block';
 }
 
-// This will close the modal when the user clicks on <span> (x)
+// This will close the modal when the user clicks on <span> (x). The onclick event
+// is being used here.
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.display = 'none';
 }
 
 // The modal will close when user clicks anywhere outside of modal
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 }

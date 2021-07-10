@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>White Duck Says Hello!</title>
+
 </head>
 
 <body>
@@ -12,9 +13,31 @@
   <div class="navbar-child links"><ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
-  </ul>
-  </div>
 
+        <!-- Instruction on how to use site - this will open a modal -->
+
+        <li><button id="howTo"><h2>How to use this site</h2></button></li>
+
+        <!-- The Modal -->
+
+        <div id="myModal" class="modal">
+
+          <!-- content -->
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>White Duck has been learning some new JavaScript tricks and he wants
+              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon" src="./assets/images/White-duck-outline.png"
+              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+            <br>White Duck has been learning some new JavaScript tricks and he wants
+              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon" src="./assets/images/White-duck-outline.png"
+              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+            <br></p>
+          </div>
+
+        </div>
+      </ul>
+    </div>
       <div class="navbar-child header">
 
         <!-- make white duck clickable and change background color when clicked on
@@ -22,7 +45,7 @@
         https://www.javascript-coder.com/button/javascript-button-p1/ -->
 
         <div>
-          <button>
+          <button class="white-duck">
             <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
               <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
                 src="./assets/images/white-duck-outline.png"
@@ -45,7 +68,9 @@
 If you wish to contact me you can fill out the form below or check out my Github
 and Instagram where you will find more of my art and coding projects.
 </p>
-</div>  <div>
+</div>
+
+ <div id="form">
   <h1>Get in touch!</h1>
   <!-- Form -->
 
@@ -56,26 +81,32 @@ and Instagram where you will find more of my art and coding projects.
             <ul class="flex-outer">
                 <li>
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name here">
+                    <input type="text" id="name" placeholder="Enter your name here *" required>
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email here">
+                    <input type="email" id="email" placeholder="Enter your email here *" required>
                 </li>
                 <li>
                     <label for="message">Message</label>
-                    <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                    <textarea rows="6" id="message" placeholder="Enter your message here *" required></textarea>
                 </li>
 
 
                 <li>
                     <button type="submit">Submit</button>
                 </li>
+
+                <li>* Required fields</li>
             </ul>
         </form>
     </div>
 
-  </form>  <footer>
+  </form>
+
+</div>
+
+ <footer>
 
             <div class="footer">
 
@@ -97,6 +128,5 @@ and Instagram where you will find more of my art and coding projects.
 
           <!-- javascript -->
           <script src="./assets/js/script.js"></script>
-
         </body>
         </html>

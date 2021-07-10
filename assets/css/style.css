@@ -141,7 +141,12 @@ background-color: white;
 border-radius: 5% 5% 5% 5%;
 }
 
-#third-box {
+#first-image {
+  border: 5px solid #555;
+  background-color: black;
+}
+
+#second-box {
 background-color: white;
 border-radius: 5% 5% 5% 5%;
 }
@@ -153,6 +158,9 @@ border-radius: 5% 5% 5% 5%;
 #story-box-duck {
   height: 80px;
 }
+
+/* quiz */
+
 
 /* code for the modal - dialogue box with info about how to use the site
 https://www.w3schools.com/howto/howto_css_modals.asp */
@@ -167,7 +175,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(255,195,0,0.8);
+  background-color: rgba(0,0,0,0.7);
 }
 
 /* Modal Content */
@@ -219,15 +227,21 @@ footer {
   margin: 20px 100px;
 }
 
+#form {
+  margin-top: 50px;
+}
+
 /* form - the styles were taken from two sources and the styles were changed to match with the design of the website - 'W3Schools - CSS Responsive Form' and 'How to Build a Responsive Form with Flexbox' */
 
 /* code from https://www.w3schools.com/howto/howto_css_responsive_form.asp */
 
 .container form {
+    font-family: "Roboto Mono", sans-serif;
+    color: #092a2e;
     height: 400px;
     width: 600px;
     border-radius: 5px;
-    background-color: #fff0f0;
+    background-color: #e4ebf5;
     padding: 20px;
     margin-top: 80px;
     margin-bottom: 150px;
@@ -264,6 +278,14 @@ textarea {
     resize: vertical;
 }
 
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -274,11 +296,6 @@ label {
     padding: 15px 15px 15px 0;
     display: inline;
     float: right;
-}
-
-#activities-options {
-    display: flex;
-    align-items: flex-start;
 }
 
 #subject {
