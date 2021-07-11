@@ -33,15 +33,13 @@
 
 ## Introduction </a>
 
-White Duck Says Hello! is a humourous one page website about a duck who is learning JavaScript and wants to show off the new skills he can do.
+White Duck Says Hello! is a humourous two page website about a duck who is learning JavaScript and wants to show off the new skills he can do.
 
-The basic idea for this project is to tell stories through words and illustrations.
-
-If time is on my side I intend to add a simple tarot/chance game. I intend to do that in a very simple way: click and generate a random card which will display an illustration and a text for the card.
+The basic idea for this project is to tell simple interactive stories through words and illustrations.
 
 Because I have been struggling to understand JavaScript I decided to keep it simple and try to make the most of it.
 
-It comprises of 4 different sections.
+It comprises of 2 different sections, displayed in boxes, plus some extra simple effects like changing the background colour of the pages.
 
 This project was conceived as a response to our JavaScript Essentials Porfolio 2 project at The Code Institute for their Full Stack Web Development Program. It comprises of an interactive front-end website.
 
@@ -54,6 +52,7 @@ This project was conceived as a response to our JavaScript Essentials Porfolio 2
 **Ideal users of this website**
 * People interested in art and design
 * People interested in JavaScript and front-end programming languages, especially beginners
+* Young people
 * Family and friends
 
 ### User Stories
@@ -62,19 +61,21 @@ This project was conceived as a response to our JavaScript Essentials Porfolio 2
 1. I want to get to see the art work in this website.
 2. I want to get to see more of Patricia’s work.
 3. I want to follow Patricia on social media to stay up to date with her art.
-4. I want to stay in touch with Patricia and try one of her drawing sessions.
 
 *As a person interested in programming:*
-1. I want to see bird related art.
-2. I want to know about Patricia’s experiences with birds.
-3. I want to stay in touch with Patricia and exchange ideas and experiences.
-4. I want to try one of Patricia’s monthly get togethers.
+1. I want to get ideas of what can be done in JavaScript, HTML and CSS
+2. I want to stay in touch with Patricia and exchange ideas and experiences.
+
+*As a young person*
+1. I want to be entertained by the cute illustrations and silly stories
 
 *As Patricia's family, friend or acquaintance:*
 1. I want to see what she’s up to.
 
 ### Development Planes
 It took me an awful long time to "get" JavaScript. And when I say that, I mean that.
+
+I started off with a very simple idea of changing the background colour of a page. Then I started to build upon this until I arrived at the final product.
 
 For an overview of some of the thought process involved in drawing up a plan for the project please consult this [PDF]().
 
@@ -83,7 +84,8 @@ For an overview of some of the thought process involved in drawing up a plan for
 **Audiences**
 * Art and design lovers
 * New and aspiring programers
-* Family, friends and acquaintances.
+* Family, friends and acquaintances
+* Young people
 
 
 **What the user needs to achieve**
@@ -91,6 +93,7 @@ For an overview of some of the thought process involved in drawing up a plan for
     * Interact with the site
     * Explore new possibilities
     * Be inspired by what can be done with JavaScript
+    * Have a giggle, maybe
 
 **What the developer needs to achieve**
 * Provide user with an easy and fun experience
@@ -117,7 +120,12 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 **Balsamiq wireframes**
 
-
+![main image](/assets/README/home.png)
+![main image](/assets/README/about.png)
+![main image](/assets/README/phone-home.png)
+![main image](/assets/README/phone-about.png)
+![main image](/assets/README/tablet-home.png)
+![main image](/assets/README/tablet-about.png)
 
 **iPad drawing**
 
@@ -126,12 +134,18 @@ For an overview of some of the thought process involved in drawing up a plan for
 #### Design
 
 **Colour Scheme**
+
+Vibrant and bold colours were chosen for this project to combine with the simple and bold illustrations.
 ￼
 **Typography**
 
+The fonts used were Roboto Mono and Uchen, with Helvetica as a fall back.
+
 **Illustrations**
 
+All illustrations were made by me for the purpose of this project. The illustrations are digital and were made on Procrete, iPad. Basically, the same image of White Duck is used over and over again with added accessories and props. The idea is to convey a sense of humour and simplicity in accordance with the very simplistic approach taken in the use of JavaScript. The illustrations were saved on .png format to make use of the transparent background of the images feature, which was a requirement for the purpose of this particular website.
 
+![main image](/assets/images/white-duck-wizard.jpg)
 ￼
 [Back to the top](#white-duck-says-hello)
 
@@ -139,13 +153,34 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 ### Design Features
 
+The website has two pages: Home and About
+Both pages of the website contain:
+* Header with logo and navigation menu (Home and About pages)
+* Instructions on how to use site (opens a modal)
+* Clickable logo that changes background colour
+* Clickable White Duck image in footer that randomly changes a bigger version of White Duck beside it
+* Footer with links to social media
 
+Home page contains:
+* The main content: two boxes
+1. Box with images to be clicked (opens a modal)
+2. Random story generator
+
+About page contains:
+* Brief introduction about me, the developer
+* Brief explanation about the project
+* Social links styled with Font Awesome
 
 ### Additional Comments
 
-
+I went from being extremely confused, overwhelmed and frustrated by JavaScript to being a bit less confused, overwhelmed and frustrated, which about a week ago I never thought I would make any progress.
 
 ### Future Features:
+
+I can see great potential for developing this project further in the future. First of all, the way it's laid out makes it fairly straight forward to add other boxes with new features. Possible features include:
+* Memory game
+* Quiz
+* More complex functions involving timer and interaction between stories and illustrations
 
 [Back to the top](#white-duck-says-hello)
 
@@ -198,27 +233,24 @@ All texts were written by me, Patricia Melo (developer and artist)
 
 * [Font Awesome](https://fontawesome.com/icons/instagram-square?style=brands)
 * [W3Schools](https://www.w3schools.com/)
-https://htmlcolorcodes.com/color-picker/
-https://css-tricks.com/lots-of-ways-to-use-math-random-in-javascript/
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/
-https://www.thoughtco.com/moving-javascript-out-of-the-web-page-2037542
-https://www.codegrepper.com/code-examples/javascript/change+image+background+color+javascript
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator
-https://blog.logrocket.com/how-to-create-fancy-corners-in-css/
-https://9elements.github.io/fancy-border-radius/#53.27.51.57--.
-https://www.diffchecker.com/diff
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-https://www.javatpoint.com/random-image-generator-in-javascript
-https://stackoverflow.com/questions/41667237/making-an-array-of-file-paths-in-javascript
-https://www.javascript-coder.com/button/javascript-button-p1/
-https://www.learnenough.com/
-https://www.youtube.com/channel/UCl0hPcsUmeld49qmWWSQKOg/playlists
-https://www.freecodecamp.org/news/javascript-projects-for-beginners/
-https://errorsea.com/how-to-change-text-onclick-event-javascript/
+* [HTML Color Codes - color picker](https://htmlcolorcodes.com/color-picker/)
+* [CSS Tricks - math random](https://css-tricks.com/lots-of-ways-to-use-math-random-in-javascript/)
+* [CSS Tricks - flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [JavaScript tutorial](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/)
+* [Thought Co](https://www.thoughtco.com/moving-javascript-out-of-the-web-page-2037542)
+* [codegrepper](https://www.codegrepper.com/code-examples/javascript/change+image+background+color+javascript)
+* [Mozilla - Silly Story Generator](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator)
+* [Diff Checker](https://www.diffchecker.com/diff)
+* [java T point - random image generator](https://www.javatpoint.com/random-image-generator-in-javascript)
+* [stackoverflow](https://stackoverflow.com/questions/41667237/making-an-array-of-file-paths-in-javascript)
+* [JavaScript Coder](https://www.javascript-coder.com/button/javascript-button-p1/)
+* [Learn Enough](https://www.learnenough.com/)
+* [Source Decoded](https://www.youtube.com/channel/UCl0hPcsUmeld49qmWWSQKOg/playlists)
+* [Free Code Camp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)
+* [errosea](https://errorsea.com/how-to-change-text-onclick-event-javascript/)
 
 
-*Note:* Even though the best efforts have been made to ackowledge all the websites, articles and codes used for this project, it is possible that some of them haven't been listed here. If that is the case, I sincerely apologise.
+*Note:* Even though the best efforts have been made to acknowledge all the websites, articles and codes used for this project, it is possible that some of them haven't been listed here. If that is the case, I sincerely apologise and am eager to correct the mistake.
 
 [Back to the top](#white-duck-says-hello)
 

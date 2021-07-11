@@ -9,7 +9,7 @@
 
 body {
   background-color: #369983;
-  font-family: 'Uchen', serif;
+  font-family: 'Uchen', Helvetica, serif;
   margin: 50px 100px;
   font-size: 80%;
 }
@@ -62,7 +62,7 @@ ul {
 
 a,
 h1 {
-  font-family: 'Uchen', serif;
+  font-family: 'Uchen', Helvetica, serif;
   text-decoration: none;
   color: white;
   display: flex;
@@ -113,7 +113,7 @@ h2 {
 
 p {
   color: white;
-  font-family: 'Roboto Mono', serif;
+  font-family: 'Roboto Mono', Helvetica, serif;
   font-size: 110%;
 }
 
@@ -377,7 +377,7 @@ footer {
 }
 
 .contact {
-  font-family: 'Roboto Mono', serif;
+  font-family: 'Roboto Mono', Helvetica, serif;
   font-size: 50%;
   color: #FEFDDC;
   text-align: center;
