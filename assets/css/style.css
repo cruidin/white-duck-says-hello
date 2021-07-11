@@ -219,6 +219,110 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
   cursor: pointer;
 }
 
+.closeTwo {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeTwo:hover,
+.closeTwo:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeThree {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeThree:hover,
+.closeThree:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeFour {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeFour:hover,
+.closeFour:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeFive {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeFive:hover,
+.closeFive:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeSix {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeSix:hover,
+.closeSix:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeSeven {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeSeven:hover,
+.closeSeven:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeEight {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeEight:hover,
+.closeEight:focus {
+  color: black;
+  cursor: pointer;
+}
+
+.closeNine {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeNine:hover,
+.closeNine:focus {
+  color: black;
+  cursor: pointer;
+}
+
 footer {
   margin-top: 30px;
   padding: 100px 0 10px;

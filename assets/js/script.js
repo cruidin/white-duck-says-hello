@@ -41,38 +41,38 @@ var whiteDuckOutline = document.images['white-duck-outline'];
     document.images['white-duck-outline'].src ='./assets/images/white-duck-outline.png'
   }
 
-  // The Modal - a modal opens a window on the page
-  // We create a variable with the method getElementById to return the element
-  // that has the ID of myModal on index.html.
-  var modalOne = document.getElementById('outlineModal');
+// The Modal - a modal opens a window on the page
+// We create a variable with the method getElementById to return the element
+// that has the ID of myModal on index.html.
+var modalOne = document.getElementById('outlineModal');
 
-  // We create another variable and use the method getElementById to get the button
-  // 'How to use this site' that opens the modal.
-  var modalButtonOne = document.getElementById('white-duck-outline');
+// We create another variable and use the method getElementById to get the image
+// button that opens the modal.
+var modalButtonOne = document.getElementById('white-duck-outline');
 
-  // This variable gets the <span> element that closes the modal by using the method
-  // getElementsByClassName.
-  var spanOne = document.getElementsByClassName('closeOne')[0];
+// This variable gets the <span> element that closes the modal by using the method
+// getElementsByClassName.
+var spanOne = document.getElementsByClassName('closeOne')[0];
 
-  // This function will open the modal when the user clicks on 'How to use this site'.
-  // The style.display property is set to 'block' which means the element is rendered
-  // as a block-level. The onclick is being used here.
-  modalButtonOne.onclick = function() {
-    modalOne.style.display = 'block';
-  }
+// This function will open the modal when the user clicks on 'How to use this site'.
+// The style.display property is set to 'block' which means the element is rendered
+// as a block-level. The onclick is being used here.
+modalButtonOne.onclick = function() {
+  modalOne.style.display = 'block';
+}
 
-  // This will close the modal when the user clicks on <span> (x). The onclick event
-  // is being used here.
-  spanOne.onclick = function() {
+// This will close the modal when the user clicks on <span> (x). The onclick event
+// is being used here.
+spanOne.onclick = function() {
+  modalOne.style.display = 'none';
+}
+
+// The modal will close when user clicks anywhere outside of modal
+window.onclick = function(event) {
+  if (event.target == modalOne) {
     modalOne.style.display = 'none';
   }
-
-  // The modal will close when user clicks anywhere outside of modal
-  window.onclick = function(event) {
-    if (event.target == modalOne) {
-      modalOne.style.display = 'none';
-    }
-  }
+}
 
 // Second image
 var whiteDuckWizard = document.images['white-duck-wizard'];
@@ -88,6 +88,40 @@ var whiteDuckWizard = document.images['white-duck-wizard'];
    document.images['white-duck-wizard'].src ='./assets/images/white-duck-wizard.png'
   }
 
+// The Modal - a modal opens a window on the page
+// We create a variable with the method getElementById to return the element
+// that has the ID of myModal on index.html.
+var modalTwo = document.getElementById('wizardModal');
+
+// We create another variable and use the method getElementById to get the image
+// button that opens the modal.
+var modalButtonTwo = document.getElementById('white-duck-wizard');
+
+// This variable gets the <span> element that closes the modal by using the method
+// getElementsByClassName.
+var spanTwo = document.getElementsByClassName('closeTwo')[0];
+
+// This function will open the modal when the user clicks on 'How to use this site'.
+// The style.display property is set to 'block' which means the element is rendered
+// as a block-level. The onclick is being used here.
+modalButtonTwo.onclick = function() {
+  modalTwo.style.display = 'block';
+}
+
+// This will close the modal when the user clicks on <span> (x). The onclick event
+// is being used here.
+spanTwo.onclick = function() {
+  modalTwo.style.display = 'none';
+}
+
+// The modal will close when user clicks anywhere outside of modal
+window.onclick = function(event) {
+  if (event.target == modalTwo) {
+    modalTwo.style.display = 'none';
+  }
+}
+
+
 // Third image
 var whiteDuckChill = document.images['white-duck-chill'];
 
@@ -102,6 +136,41 @@ var whiteDuckChill = document.images['white-duck-chill'];
     document.images['white-duck-chill'].src ='./assets/images/white-duck-chill.png'
   }
 
+
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalThree = document.getElementById('chillModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonThree = document.getElementById('white-duck-chill');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanThree = document.getElementsByClassName('closeThree')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonThree.onclick = function() {
+    modalThree.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanThree.onclick = function() {
+    modalTwo.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalTwo) {
+      modalThree.style.display = 'none';
+    }
+  }
+
+
 // Fourth image
 var whiteDuckGlasses = document.images['white-duck-glasses'];
 
@@ -114,6 +183,40 @@ var whiteDuckGlasses = document.images['white-duck-glasses'];
 // to change back to the original image
   function changeImageGlassesBack() {
     document.images['white-duck-glasses'].src ='./assets/images/white-duck-glasses.png'
+  }
+
+
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalFour = document.getElementById('glassesModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonFour = document.getElementById('white-duck-glasses');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanFour = document.getElementsByClassName('closeFour')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonFour.onclick = function() {
+    modalFour.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanFour.onclick = function() {
+    modalFour.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalFour) {
+      modalFour.style.display = 'none';
+    }
   }
 
 // Fifth image
@@ -130,6 +233,40 @@ var whiteDuckApple = document.images['white-duck-apple'];
    document.images['white-duck-apple'].src ='./assets/images/white-duck-apple.png'
   }
 
+
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalFive = document.getElementById('appleModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonFive = document.getElementById('white-duck-apple');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanFive = document.getElementsByClassName('closeFive')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonFive.onclick = function() {
+    modalFive.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanTwo.onclick = function() {
+    modalFive.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalFive) {
+      modalFive.style.display = 'none';
+    }
+  }
+
 // Sixth image
 var whiteDuckLeaves = document.images['white-duck-leaves'];
 
@@ -143,6 +280,41 @@ var whiteDuckLeaves = document.images['white-duck-leaves'];
   function changeImageLeavesBack() {
     document.images['white-duck-leaves'].src ='./assets/images/white-duck-leaves.png'
   }
+
+
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalSix = document.getElementById('leavesModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonSix = document.getElementById('white-duck-leaves');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanSix = document.getElementsByClassName('closeSix')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonSix.onclick = function() {
+    modalSix.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanSix.onclick = function() {
+    modalSix.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalSix) {
+      modalSix.style.display = 'none';
+    }
+  }
+
 
 // Seventh image
 var whiteDuckLove = document.images['white-duck-love'];
@@ -158,7 +330,40 @@ var whiteDuckLove = document.images['white-duck-love'];
     document.images['white-duck-love'].src ='./assets/images/white-duck-love.png'
   }
 
-// Eight image
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalSeven = document.getElementById('loveModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonSeven = document.getElementById('white-duck-love');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanSeven = document.getElementsByClassName('closeSeven')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonSeven.onclick = function() {
+    modalSeven.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanSeven.onclick = function() {
+    modalSeven.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalSeven) {
+      modalSeven.style.display = 'none';
+    }
+  }
+
+// Eighth image
 var whiteDuckMonocle = document.images['white-duck-monocle'];
 
 // to change image when mouse hovers
@@ -172,20 +377,86 @@ var whiteDuckMonocle = document.images['white-duck-monocle'];
    document.images['white-duck-monocle'].src ='./assets/images/white-duck-monocle.png'
   }
 
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalEight = document.getElementById('monocleModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonEight = document.getElementById('white-duck-monocle');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanEight = document.getElementsByClassName('closeEight')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonEight.onclick = function() {
+    modalEight.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanEight.onclick = function() {
+    modalEight.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalEight) {
+      modalEight.style.display = 'none';
+    }
+  }
+
 // Nineth image
-var whiteDuckChill = document.images['white-duck-chill'];
+var whiteDuckUmbrella = document.images['white-duck-umbrella'];
 
 // to change image when mouse hovers
-  function changeImageChill() {
-    document.images['white-duck-chill'].src = './assets/images/white-duck-chill2.png';
+  function changeImageUmbrella() {
+    document.images['white-duck-umbrella'].src = './assets/images/white-duck-umbrella2.png';
     return true;
   }
 
 // to change back to the original image
-  function changeImageChillBack() {
-    document.images['white-duck-chill'].src ='./assets/images/white-duck-chill.png'
+  function changeImageUmbrellaBack() {
+    document.images['white-duck-umbrella'].src ='./assets/images/white-duck-umbrella.png'
   }
 
+
+  // The Modal - a modal opens a window on the page
+  // We create a variable with the method getElementById to return the element
+  // that has the ID of myModal on index.html.
+  var modalNine = document.getElementById('umbrellaModal');
+
+  // We create another variable and use the method getElementById to get the image
+  // button that opens the modal.
+  var modalButtonNine = document.getElementById('white-duck-umbrella');
+
+  // This variable gets the <span> element that closes the modal by using the method
+  // getElementsByClassName.
+  var spanNine = document.getElementsByClassName('closeNine')[0];
+
+  // This function will open the modal when the user clicks on 'How to use this site'.
+  // The style.display property is set to 'block' which means the element is rendered
+  // as a block-level. The onclick is being used here.
+  modalButtonNine.onclick = function() {
+    modalNine.style.display = 'block';
+  }
+
+  // This will close the modal when the user clicks on <span> (x). The onclick event
+  // is being used here.
+  spanNine.onclick = function() {
+    modalNine.style.display = 'none';
+  }
+
+  // The modal will close when user clicks anywhere outside of modal
+  window.onclick = function(event) {
+    if (event.target == modalNine) {
+      modalNine.style.display = 'none';
+    }
+  }
 
 
  // code for changing boxes.
