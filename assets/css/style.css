@@ -29,6 +29,10 @@ ul {
   list-style-type: none;
 }
 
+.active {
+    color: #c5dac9;
+}
+
 #howTo {
   color: white;
   font-family: inherit;

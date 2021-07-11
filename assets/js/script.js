@@ -26,6 +26,7 @@ var logoImage = document.images['jsbutton'];
  }
 
  // code for changing boxes.
+ // Array with images to be changed randomly
  const imageArray = [
    'assets/images/white-duck-chill.png',
    'assets/images/white-duck-chill2.png',

@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-  <meta charset="utf-8">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hello White Duck! A simple interactive JavaScript website">
+  <meta name="keywords" content="duck, JavaScript, basic, simple, art, design">
+
 
   <!-- Link to CSS page -->
 
@@ -18,90 +24,93 @@
   <!-- Header contains Home and About links and a modal window with instructions
   about the site -->
 
-  <div class="navbar-container">
+  <header>
 
-    <div class="navbar-child links"><ul>
+    <div class="navbar-container">
 
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <div class="navbar-child links"><ul>
 
-      <!-- Instruction on how to use site - this will open a modal -->
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
 
-      <li><button id="howTo"><h2>How to use this site</h2></button></li>
+        <!-- Instruction on how to use site - this will open a modal -->
 
-      <!-- The Modal - the id #myModel is used in the JavaScript file using the
-      getElementById() method-->
+        <li><button id="howTo"><h2>How to use this site</h2></button></li>
 
-      <div id="myModal" class="modal">
+        <!-- The Modal - the id #myModel is used in the JavaScript file using the
+        getElementById() method-->
 
-        <!-- content -->
+        <div id="myModal" class="modal">
 
-        <div class="modal-content">
+          <!-- content -->
 
-          <!-- the class .close is used in the JavaScript file using the
-          getElementsByClassName() method -->
+          <div class="modal-content">
 
-          <span class="close">&times;</span>
+            <!-- the class .close is used in the JavaScript file using the
+            getElementsByClassName() method -->
 
-          <!-- Paragraphs with instructions -->
+            <span class="close">&times;</span>
 
-          <p>White Duck has been learning some new JavaScript tricks and he wants
-            to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-            src="./assets/images/White-duck-outline.png"
-            alt=""> you can click on it and see what happens! But be aware: he might be disguised!
-            <br>White Duck has been learning some new JavaScript tricks and he wants
-            to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-            src="./assets/images/White-duck-outline.png"
-            alt=""> you can click on it and see what happens! But be aware: he might be disguised!
-            <br></p>
+            <!-- Paragraphs with instructions -->
+
+            <p>White Duck has been learning some new JavaScript tricks and he wants
+              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
+              src="./assets/images/White-duck-outline.png"
+              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+              <br>White Duck has been learning some new JavaScript tricks and he wants
+              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
+              src="./assets/images/White-duck-outline.png"
+              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+              <br></p>
+
+          </div>
+
+        </div>
+
+        </ul>
+
+      </div>
+
+      <div class="navbar-child header">
+
+        <!-- make white duck clickable and change background color when clicked on
+        how to make an image act as a button in js
+        https://www.javascript-coder.com/button/javascript-button-p1/ -->
+
+        <div>
+
+          <!-- The button is displayed as an icon - the class ".white-duck" is used
+          in the JavaScript file with the querySelector() method -->
+
+          <button class="white-duck">
+
+            <!-- When the mouse hovers the logo which consists of the words "White
+            Duck Says Hello!" on a blue background and the icon of a white duck, the
+            icon changes slightly and changes back to the original once mouse no
+            longer hovers. Two functions are needed for this as specified by the
+            onMouseOver and onMouseOut events -->
+
+            <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
+
+              <!-- Inside the img tag the name "jsbutton" is used in the JavaScript
+              file in the images read-only property format. In this case it returns a
+              specific image in this page as specified below in the src attribute-->
+
+              <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
+                src="./assets/images/white-duck-outline.png" alt="javascript button">
+              </h1>
+
+            </a>
+
+          </button>
 
         </div>
 
       </div>
 
-      </ul>
-
     </div>
 
-    <div class="navbar-child header">
-
-      <!-- make white duck clickable and change background color when clicked on
-      how to make an image act as a button in js
-      https://www.javascript-coder.com/button/javascript-button-p1/ -->
-
-      <div>
-
-        <!-- The button is displayed as an icon - the class ".white-duck" is used
-        in the JavaScript file with the querySelector() method -->
-
-        <button class="white-duck">
-
-          <!-- When the mouse hovers the logo which consists of the words "White
-          Duck Says Hello!" on a blue background and the icon of a white duck, the
-          icon changes slightly and changes back to the original once mouse no
-          longer hovers. Two functions are needed for this as specified by the
-          onMouseOver and onMouseOut events -->
-
-          <a href="#" onMouseOver="return changeImage()" onMouseOut= "return
-          changeImageBack()">
-
-            <!-- Inside the img tag the name "jsbutton" is used in the JavaScript
-            file in the images read-only property format. In this case it returns a
-            specific image in this page as specified below in the src attribute-->
-
-            <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
-              src="./assets/images/white-duck-outline.png" alt="javascript button">
-            </h1>
-
-          </a>
-
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
+  </header
 
   <!-- Main content. This div includes two boxes -->
 
@@ -130,7 +139,7 @@
 
       <div>
 
-        <button class="random-story" onclick="timer()" type ="button">
+        <button class="random-story" type ="button">
           <img id="story-box-duck" src="./assets/images/white-duck-monocle.png"
           alt="">
         </button>
@@ -174,18 +183,37 @@
 
         <ul>
 
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.asp" target="_blank">Github</a></li>
-          <li><a href="about.asp" target="_blank">Instagram</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
 
           </ul>
+
+          <!-- Social media icons are from Font Awesome -->
+
+        <ul class="social-links">
+
+            <li>
+
+              <a href="http://instagram.com/birdsofmagic" target="_blank" rel="noopener"
+                    aria-label="Visit my Instagram page (opens in a new page"><i
+                        class="fab fa-instagram-square"></i></a>
+            </li>
+
+            <li><a href="http://github.com/cruidin" target="_blank" rel="noopener"
+                    aria-label="Visit my GitHub page (opens in a new page"><i class="fab fa-github-square"></i></a>
+
+            </li>
+
+        </ul>
 
       </div>
 
     </div>
 
   </footer>
+
+  <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/a25ed042a8.js" crossorigin="anonymous"></script>
 
   <!-- Link to JavaScript file -->
 
