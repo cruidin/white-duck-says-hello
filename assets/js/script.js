@@ -168,3 +168,25 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 }
+
+// Quiz
+// Variables referencing HTML elements byt using the getElementById method
+const quizContainer = document.getElementById9('quiz');
+const resultsContainer = document.getElementById('results');
+const submitButton = document.getElementById('submit');
+
+// Function for the quiz
+function theQuiz() {
+
+}
+
+// Function for showing the results
+function theResults() {
+
+}
+
+// This will make the theQuiz function run instantly
+theQuiz();
+
+// Submit Button - the function theResults will be run only when the submit button is clicked
+submitButton.addEventListener('click', theResults);
