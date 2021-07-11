@@ -28,27 +28,27 @@ var logoImage = document.images['jsbutton'];
 // Gallery in the first box
 
 // First image
-var whiteDuckOutline = document.images['white-duck-outline'];
+var whiteDuckMermaid = document.images['white-duck-mermaid'];
 
 // to change image when mouse hovers
-  function changeImageOutline() {
-    document.images['white-duck-outline'].src = './assets/images/white-duck-quack2.png';
+  function changeImageMermaid() {
+    document.images['white-duck-mermaid'].src = './assets/images/white-duck-mermaid2.png';
     return true;
   }
 
 // to change back to the original image
-  function changeImageOutlineBack() {
-    document.images['white-duck-outline'].src ='./assets/images/white-duck-outline.png'
+  function changeImageMermaidBack() {
+    document.images['white-duck-mermaid'].src ='./assets/images/white-duck-mermaid.png'
   }
 
 // The Modal - a modal opens a window on the page
 // We create a variable with the method getElementById to return the element
 // that has the ID of myModal on index.html.
-var modalOne = document.getElementById('outlineModal');
+var modalOne = document.getElementById('mermaidModal');
 
 // We create another variable and use the method getElementById to get the image
 // button that opens the modal.
-var modalButtonOne = document.getElementById('white-duck-outline');
+var modalButtonOne = document.getElementById('white-duck-mermaid');
 
 // This variable gets the <span> element that closes the modal by using the method
 // getElementsByClassName.
@@ -160,7 +160,7 @@ var whiteDuckChill = document.images['white-duck-chill'];
   // This will close the modal when the user clicks on <span> (x). The onclick event
   // is being used here.
   spanThree.onclick = function() {
-    modalTwo.style.display = 'none';
+    modalThree.style.display = 'none';
   }
 
   // The modal will close when user clicks anywhere outside of modal
@@ -256,7 +256,7 @@ var whiteDuckApple = document.images['white-duck-apple'];
 
   // This will close the modal when the user clicks on <span> (x). The onclick event
   // is being used here.
-  spanTwo.onclick = function() {
+  spanFive.onclick = function() {
     modalFive.style.display = 'none';
   }
 
@@ -478,6 +478,10 @@ var whiteDuckUmbrella = document.images['white-duck-umbrella'];
    'assets/images/white-duck-wizard2.png',
    'assets/images/white-duck-apple.png',
    'assets/images/white-duck-apple2.png',
+   'assets/images/white-duck-umbrella.png',
+   'assets/images/white-duck-umbrella2.png',
+   'assets/images/white-duck-mermaid.png',
+   'assets/images/white-duck-mermaid2.png',
  ];
 
 const image = document.querySelector('#firstImage');

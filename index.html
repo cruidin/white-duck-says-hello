@@ -57,10 +57,7 @@
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
               src="./assets/images/White-duck-outline.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
-              <br>White Duck has been learning some new JavaScript tricks and he wants
-              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
-              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+              <br>
               <br></p>
 
           </div>
@@ -116,26 +113,27 @@
 
   <div class="container">
 
-    <!-- First box - when button is clicked a random image is displayed -->
+    <!-- First box - when mouse hovers it changes the image, when image is clicked
+    a modal is displayed -->
 
-    <div class="story-box" id="first-box">
+    <div id="first-box">
 
-      <!-- <div class="title"><h3>Gallery</h3></div> -->
+      <div class="column">
 
         <!-- First image -->
 
-        <button id="white-duck-outline">
+        <button id="white-duck-mermaid">
 
-          <a href="#" onMouseOver="return changeImageOutline()" onMouseOut= "return changeImageOutlineBack()">
+          <a href="#first-box" onMouseOver="return changeImageMermaid()" onMouseOut= "return changeImageMermaidBack()">
 
-            <img name="white-duck-outline" class="logo"
-              src="./assets/images/white-duck-outline.png" alt="javascript button">
+            <img name="white-duck-mermaid" class="logo"
+              src="./assets/images/white-duck-mermaid.png" alt="javascript button">
 
           </a>
 
         </button>
 
-        <div id="outlineModal" class="modal">
+        <div id="mermaidModal" class="modal">
 
           <!-- content -->
 
@@ -150,11 +148,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/White-duck-mermaid.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/White-duck-mermaid2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -166,7 +164,7 @@
 
         <button id="white-duck-wizard">
 
-          <a href="#" onMouseOver="return changeImageWizard()" onMouseOut= "return changeImageWizardBack()">
+          <a href="#first-box" onMouseOver="return changeImageWizard()" onMouseOut= "return changeImageWizardBack()">
 
             <img name="white-duck-wizard" class="logo"
               src="./assets/images/white-duck-wizard.png" alt="javascript button">
@@ -190,11 +188,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-wizard.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-wizard2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -206,7 +204,7 @@
 
         <button id="white-duck-chill">
 
-          <a href="#" onMouseOver="return changeImageChill()" onMouseOut= "return changeImageChillBack()">
+          <a href="#first-box" onMouseOver="return changeImageChill()" onMouseOut= "return changeImageChillBack()">
 
             <img name="white-duck-chill" class="logo"
               src="./assets/images/white-duck-chill.png" alt="javascript button">
@@ -230,11 +228,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-chill.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-chill2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -242,11 +240,15 @@
 
         </div>
 
+      </div>
+
+      <div class="column">
+
         <!-- Fourth image -->
 
         <button id="white-duck-glasses">
 
-          <a href="#" onMouseOver="return changeImageGlasses()" onMouseOut= "return changeImageGlassesBack()">
+          <a href="#first-box" onMouseOver="return changeImageGlasses()" onMouseOut= "return changeImageGlassesBack()">
 
             <img name="white-duck-glasses" class="logo"
               src="./assets/images/white-duck-glasses.png" alt="javascript button">
@@ -270,11 +272,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-glasses.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-glasses.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -286,7 +288,7 @@
 
         <button id="white-duck-apple">
 
-          <a href="#" onMouseOver="return changeImageApple()" onMouseOut= "return changeImageAppleBack()">
+          <a href="#first-box" onMouseOver="return changeImageApple()" onMouseOut= "return changeImageAppleBack()">
 
             <img name="white-duck-apple" class="logo"
               src="./assets/images/white-duck-apple.png" alt="javascript button">
@@ -310,11 +312,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-apple.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-apple2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -326,7 +328,7 @@
 
         <button id="white-duck-leaves">
 
-          <a href="#" onMouseOver="return changeImageLeaves()" onMouseOut= "return changeImageLeavesBack()">
+          <a href="#first-box" onMouseOver="return changeImageLeaves()" onMouseOut= "return changeImageLeavesBack()">
 
             <img name="white-duck-leaves" class="logo"
               src="./assets/images/white-duck-leaves.png" alt="javascript button">
@@ -350,11 +352,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-leaves.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-leaves2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -362,11 +364,15 @@
 
         </div>
 
+      </div>
+
+      <div class="column">
+
         <!-- Seventh image -->
 
         <button id="white-duck-love">
 
-          <a href="#" onMouseOver="return changeImageLove()" onMouseOut= "return changeImageLoveBack()">
+          <a href="#first-box" onMouseOver="return changeImageLove()" onMouseOut= "return changeImageLoveBack()">
 
             <img name="white-duck-love" class="logo"
               src="./assets/images/white-duck-love.png" alt="javascript button">
@@ -390,11 +396,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-love.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-love2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -406,7 +412,7 @@
 
         <button id="white-duck-monocle">
 
-          <a href="#" onMouseOver="return changeImageMonocle()" onMouseOut= "return changeImageMonocleBack()">
+          <a href="#first-box" onMouseOver="return changeImageMonocle()" onMouseOut= "return changeImageMonocleBack()">
 
             <img name="white-duck-monocle" class="logo"
               src="./assets/images/white-duck-monocle.png" alt="javascript button">
@@ -430,11 +436,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-monocle.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-monocle.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -446,7 +452,7 @@
 
         <button id="white-duck-umbrella">
 
-          <a href="#" onMouseOver="return changeImageUmbrella()" onMouseOut= "return changeImageUmbrellaBack()">
+          <a href="#first-box" onMouseOver="return changeImageUmbrella()" onMouseOut= "return changeImageUmbrellaBack()">
 
             <img name="white-duck-umbrella" class="logo"
               src="./assets/images/white-duck-umbrella.png" alt="javascript button">
@@ -470,11 +476,11 @@
 
             <p>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-umbrella.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br>White Duck has been learning some new JavaScript tricks and he wants
               to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/White-duck-outline.png"
+              src="./assets/images/white-duck-umbrella2.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
               <br></p>
 
@@ -482,13 +488,14 @@
 
         </div>
 
+      </div>
+
     </div>
 
     <!-- Second box - when button is clicked a random story is generated -->
 
     <div class="story-box" id="second-box">
 
-      <div class="title"><h3>Story Time!</h3></div>
 
       <div>
 
@@ -506,7 +513,7 @@
 
         <p class="story">White Duck is ready to tell you a story.
           A silly one, probably. Are you ready? Click on White Duck to generate
-          a fun story!</p>
+          a fun story!<br><br>Attention! It works better if you're aged 6 or under.</p>
 
     </div>
 

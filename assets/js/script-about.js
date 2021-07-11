@@ -57,3 +57,41 @@ window.onclick = function(event) {
     modal.style.display = 'none';
   }
 }
+
+
+ // code for changing boxes.
+ // Array with images to be changed randomly
+ const imageArray = [
+   'assets/images/white-duck-chill.png',
+   'assets/images/white-duck-chill2.png',
+   'assets/images/white-duck-glasses.png',
+   'assets/images/white-duck-glasses2.png',
+   'assets/images/white-duck-leaves.png',
+   'assets/images/white-duck-leaves2.png',
+   'assets/images/white-duck-love.png',
+   'assets/images/white-duck-love2.png',
+   'assets/images/white-duck-monocle.png',
+   'assets/images/white-duck-monocle2.png',
+   'assets/images/white-duck-outline.png',
+   'assets/images/white-duck-quack2.png',
+   'assets/images/white-duck-wizard.png',
+   'assets/images/white-duck-wizard2.png',
+   'assets/images/white-duck-apple.png',
+   'assets/images/white-duck-apple2.png',
+   'assets/images/white-duck-umbrella.png',
+   'assets/images/white-duck-umbrella2.png',
+   'assets/images/white-duck-mermaid.png',
+   'assets/images/white-duck-mermaid2.png',
+ ];
+
+const image = document.querySelector('#firstImage');
+const button = document.querySelector('#firstBtn');
+
+window.onload = () => generateRandomPicture(imageArray);
+
+button.addEventListener('click', () => generateRandomPicture(imageArray));
+
+function generateRandomPicture(array){
+  let randomNum = Math.floor(Math.random() * array.length);
+  image.setAttribute('src', array[randomNum]);
+}

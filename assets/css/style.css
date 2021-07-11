@@ -17,7 +17,7 @@ body {
 .navbar-container {
   display: flex;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 .navbar-child {
@@ -129,9 +129,37 @@ img,
   border-radius: 10%;
 }
 
-.story-box {
-  background-color: white;
-  border
+.column {
+  flex: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+#first-box {
+  background-color: #F9F1F1;
+  border-radius: 5% 5% 5% 5%;
+  box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .2);
+  height: 300px;
+  width: 300px;
+  padding: 100px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  color: #127ABA;
+}
+
+#first-image {
+  border: 5px solid #555;
+  background-color: black;
+}
+
+#second-box {
+  background-color: #F9F1F1;
+  border-radius: 5% 5% 5% 5%;
   box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .2);
   height: 300px;
   width: 300px;
@@ -141,22 +169,6 @@ img,
   flex-wrap: wrap;
   justify-content: center;
   color: #127ABA;
-
-}
-
-#first-box {
-background-color: white;
-border-radius: 5% 5% 5% 5%;
-}
-
-#first-image {
-  border: 5px solid #555;
-  background-color: black;
-}
-
-#second-box {
-background-color: white;
-border-radius: 5% 5% 5% 5%;
 }
 
 .story {
@@ -324,8 +336,8 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 }
 
 footer {
-  margin-top: 30px;
-  padding: 100px 0 10px;
+  margin-top: 10px;
+  padding: 50px 0 10px;
   position: relative;
   width: 100%;
 }
@@ -353,7 +365,7 @@ footer {
 
 .footer a {
     display: inline-block;
-    padding: 10px;
+    margin: 10px;
     color: #ffffff;
     text-decoration: none;
     font-weight: normal;
@@ -383,9 +395,45 @@ footer {
   font-size: 4em;
 }
 
-@media screen and (max-width: 1800px) {
+/* media queries */
 
+@media screen and (min-width: 2500px) {
+  header {
+    width: 1870px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 
+  .container {
+    width: 1870px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  footer {
+    width: 1870px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+@media screen and (max-width: 2000px) {
+  header {
+    width: 1600px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .container {
+    width: 1600px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  footer {
+    width: 1600px;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
   .box {
      display: flex;
      flex-wrap: wrap;
