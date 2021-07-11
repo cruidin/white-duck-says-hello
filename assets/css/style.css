@@ -206,6 +206,19 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
   cursor: pointer;
 }
 
+.closeOne {
+  color: orange;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.closeOne:hover,
+.closeOne:focus {
+  color: black;
+  cursor: pointer;
+}
+
 footer {
   margin-top: 30px;
   padding: 100px 0 10px;
