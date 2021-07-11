@@ -75,7 +75,7 @@ a:hover {
   border-color: transparent;
 }
 
-#logo {
+.logo {
   height: 80px;
 }
 
@@ -162,9 +162,6 @@ border-radius: 5% 5% 5% 5%;
 #story-box-duck {
   height: 80px;
 }
-
-/* quiz */
-
 
 /* code for the modal - dialogue box with info about how to use the site
 https://www.w3schools.com/howto/howto_css_modals.asp */

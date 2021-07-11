@@ -90,14 +90,13 @@
             longer hovers. Two functions are needed for this as specified by the
             onMouseOver and onMouseOut events -->
 
-            <a href="#" onMouseOver="return changeImage()" onMouseOut= "return
-            changeImageBack()">
+            <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
 
               <!-- Inside the img tag the name "jsbutton" is used in the JavaScript
               file in the images read-only property format. In this case it returns a
               specific image in this page as specified below in the src attribute-->
 
-              <h1>White Duck says hello!<img name="jsbutton" id="logo" class="color"
+              <h1>White Duck says hello!<img name="jsbutton" class="logo" class="color"
                 src="./assets/images/white-duck-outline.png" alt="javascript button">
               </h1>
 
@@ -129,50 +128,8 @@
 
     </div>
 
-    <div id="form">
 
-      <h1>Get in touch!</h1>
-
-      <!-- Form -->
-
-      <!-- This form was made with the help from an article titled How to Build a
-      Responsive Form with Flexbox from this site (sorry but the validator is
-      complaining about the link having two consecutive hyphens. Link is included in
-      README file) https://webdesign.tutsplus.com/tutorials/ and this article
-      https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
-
-      <div class="container info">
-        <form>
-          <ul class="flex-outer">
-            <li>
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Enter your name here *"
-              required>
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Enter your email here *"
-              required>
-            </li>
-            <li>
-              <label for="message">Message</label>
-              <textarea rows="6" id="message" placeholder="Enter your message here *"
-              required></textarea>
-            </li>
-
-            <li>
-              <button type="submit">Submit</button>
-            </li>
-
-            <li>* Required fields</li>
-
-          </ul>
-
-        </form>
-
-      </div>
-
-    </div>
+  </div>
 
   <!-- The footer contains a farewell message from White Duck and links
       to social media and Home and About pages -->
@@ -232,7 +189,7 @@
 
   <!-- Link to JavaScript file -->
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script-about.js"></script>
 
 </body>
 </html>
