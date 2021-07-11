@@ -25,6 +25,47 @@ var logoImage = document.images['jsbutton'];
    document.images['jsbutton'].src ='./assets/images/white-duck-outline.png'
  }
 
+//
+
+ var whiteDuckOutline = document.images['white-duck-outline'];
+
+ // to change image when mouse hovers
+  function changeImageOutline() {
+    document.images['white-duck-outline'].src = './assets/images/white-duck-quack2.png';
+    return true;
+  }
+
+ // to change back to the original image
+  function changeImageOutlineBack() {
+    document.images['white-duck-outline'].src ='./assets/images/white-duck-outline.png'
+  }
+
+var whiteDuckWizard = document.images['white-duck-wizard'];
+
+  // to change image when mouse hovers
+   function changeImageWizard() {
+     document.images['white-duck-wizard'].src = './assets/images/white-duck-wizard2.png';
+     return true;
+   }
+
+  // to change back to the original image
+   function changeImageWizardBack() {
+     document.images['white-duck-wizard'].src ='./assets/images/white-duck-wizard.png'
+   }
+
+  var whiteDuckChill = document.images['white-duck-chill'];
+
+     // to change image when mouse hovers
+      function changeImageChill() {
+        document.images['white-duck-chill'].src = './assets/images/white-duck-chill2.png';
+        return true;
+      }
+
+     // to change back to the original image
+      function changeImageChillBack() {
+        document.images['white-duck-chill'].src ='./assets/images/white-duck-chill.png'
+      }
+
  // code for changing boxes.
  // Array with images to be changed randomly
  const imageArray = [
@@ -40,6 +81,10 @@ var logoImage = document.images['jsbutton'];
    'assets/images/white-duck-monocle2.png',
    'assets/images/white-duck-outline.png',
    'assets/images/white-duck-quack2.png',
+   'assets/images/white-duck-wizard.png',
+   'assets/images/white-duck-wizard2.png',
+   'assets/images/white-duck-apple.png',
+   'assets/images/white-duck-apple2.png',
  ];
 
 const image = document.querySelector('#firstImage');
