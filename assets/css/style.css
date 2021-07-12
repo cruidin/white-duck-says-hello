@@ -712,3 +712,21 @@ form p {
     margin: 0;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .navbar-container {
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+  #blue {
+    width: 70%;
+  }
+  .icons {
+    height: 60px;
+  }
+
+  img, .box {
+    height: 150px;
+}
