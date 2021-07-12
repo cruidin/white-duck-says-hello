@@ -346,6 +346,10 @@ var footerImage = document.images['footerImage'];
    'assets/images/white-duck-umbrella2.png',
    'assets/images/white-duck-mermaid.png',
    'assets/images/white-duck-mermaid2.png',
+   'assets/images/white-duck-sad.png',
+   'assets/images/white-duck-sad2.png',
+   'assets/images/white-duck-reading.png',
+   'assets/images/white-duck-reading2.png'
  ];
 
 const image = document.querySelector('#firstImage');

@@ -52,7 +52,7 @@ This project was conceived as a response to our JavaScript Essentials Porfolio 2
 **Ideal users of this website**
 * People interested in art and design
 * People interested in JavaScript and front-end programming languages, especially beginners
-* Young people
+* Young families
 * Family and friends
 
 ### User Stories
@@ -66,8 +66,8 @@ This project was conceived as a response to our JavaScript Essentials Porfolio 2
 1. I want to get ideas of what can be done in JavaScript, HTML and CSS
 2. I want to stay in touch with Patricia and exchange ideas and experiences.
 
-*As a young person*
-1. I want to be entertained by the cute illustrations and silly stories
+*As a parent/carer of young children*
+1. I want to have a fun time and a giggle with my children by looking and talking about the cute illustrations and reading the silly stories
 
 *As Patricia's family, friend or acquaintance:*
 1. I want to see what she’s up to.
@@ -85,7 +85,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 * Art and design lovers
 * New and aspiring programers
 * Family, friends and acquaintances
-* Young people
+* Young families
 
 
 **What the user needs to achieve**
@@ -135,7 +135,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 **Colour Scheme**
 
-Vibrant and bold colours were chosen for this project to combine with the simple and bold illustrations.
+Vibrant and bold colours were chosen for this project to match with the simple and bold illustrations.
 ￼
 **Typography**
 
@@ -143,7 +143,7 @@ The fonts used were Roboto Mono and Uchen, with Helvetica as a fall back.
 
 **Illustrations**
 
-All illustrations were made by me for the purpose of this project. The illustrations are digital and were made on Procrete, iPad. Basically, the same image of White Duck is used over and over again with added accessories and props. The idea is to convey a sense of humour and simplicity in accordance with the very simplistic approach taken in the use of JavaScript. The illustrations were saved on .png format to make use of the transparent background of the images feature, which was a requirement for the purpose of this particular website.
+All illustrations were made by me for the purpose of this project. The illustrations are digital and were made on Procrete, iPad. Basically, the same image of White Duck is used over and over again with added accessories and props. The idea is to convey a sense of humour and simplicity in accordance with the very simplistic approach taken in the use of JavaScript. The illustrations were saved on .png format to make use of the transparent background feature, which was a requirement for the purpose of this particular website.
 
 ![main image](/assets/images/white-duck-wizard.jpg)
 ￼
@@ -159,7 +159,7 @@ Both pages of the website contain:
 * Instructions on how to use site (opens a modal)
 * Clickable logo that changes background colour
 * Clickable White Duck image in footer that randomly changes a bigger version of White Duck beside it
-* Footer with links to social media
+* Footer with links to social media and GitHub styled with Font Awesome
 
 Home page contains:
 * The main content: two boxes
@@ -167,9 +167,8 @@ Home page contains:
 2. Random story generator
 
 About page contains:
-* Brief introduction about me, the developer
+* Brief introduction about me, Patricia Melo, the developer
 * Brief explanation about the project
-* Social links styled with Font Awesome
 
 ### Additional Comments
 
@@ -177,7 +176,7 @@ I went from being extremely confused, overwhelmed and frustrated by JavaScript t
 
 ### Future Features:
 
-I can see great potential for developing this project further in the future. First of all, the way it's laid out makes it fairly straight forward to add other boxes with new features. Possible features include:
+I can see great potential for developing this project further in the future. First of all, the way it's laid out makes it fairly straight forward to add more boxes with new features. Possible features include:
 * Memory game
 * Quiz
 * More complex functions involving timer and interaction between stories and illustrations
