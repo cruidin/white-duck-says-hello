@@ -309,6 +309,20 @@ spanNine.onclick = function() {
   modalNine.style.display = 'none';
 }
 
+// To change footer image when mouse hover
+var footerImage = document.images['footerImage'];
+
+// to change image when mouse hovers
+ function changeFooterImage() {
+   document.images['footerImage'].src = './assets/images/white-duck-sad2.png';
+   return true;
+ }
+
+// to change back to the original image
+ function changeFooterImageBack() {
+   document.images['footerImage'].src ='./assets/images/white-duck-sad.png'
+ }
+
  // code for changing boxes.
  // Array with images to be changed randomly
  const imageArray = [
@@ -347,6 +361,19 @@ function generateRandomPicture(array){
 }
 
 // second box
+var boxTwoImage = document.images['box-two-image'];
+
+// to change image when mouse hovers
+  function changeBoxTwoImage() {
+   document.images['box-two-image'].src = './assets/images/white-duck-reading2.png';
+   return true;
+  }
+
+// to change back to the original image
+  function changeBoxTwoImageBack() {
+   document.images['box-two-image'].src ='./assets/images/white-duck-reading.png'
+  }
+
 // code for box where a random story is generated every time the duck is clicked on
 // from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Silly_story_generator
 // variables and function definition
@@ -376,7 +403,7 @@ let insert1 = ["there was a raging storm",
 
 let insert2 = ["There was a terrible commotion amongst the people",
 "Everybody started to laugh",
-"The people scremed and shut their eyes",
+"The people screamed and shut their eyes",
 "Nobody could understand what was going on",
 "Someone did a fart"];
 
@@ -411,7 +438,7 @@ let insert6 = ["happy ever after.",
 "very cranky.",
 "so sore they had to go to hospital.",
 "dead after that.",
-"mad.",
+"really mad at him.",
 "relieved."];
 
 // event listener and result function

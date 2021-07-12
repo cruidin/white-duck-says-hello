@@ -58,6 +58,20 @@ window.onclick = function(event) {
   }
 }
 
+// To change footer image when mouse hover
+var footerImage = document.images['footerImage'];
+
+// to change image when mouse hovers
+ function changeFooterImage() {
+   document.images['footerImage'].src = './assets/images/white-duck-sad2.png';
+   return true;
+ }
+
+// to change back to the original image
+ function changeFooterImageBack() {
+   document.images['footerImage'].src ='./assets/images/white-duck-sad.png'
+ }
+
 
  // code for changing boxes.
  // Array with images to be changed randomly
