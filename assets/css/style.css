@@ -61,7 +61,7 @@ ul {
     color: black;
 }
 
-#howTo {
+#how-to {
   color: black;
   font-family: inherit;
   font-size: 80%;
@@ -73,6 +73,12 @@ ul {
   border-radius: 60% 40% 40% 20% / 70% 60% 30% 25%;
   box-shadow: 5px 5px 1px 1px rgba(0, 0, 255, .2);
   background-color: #127ABA;
+}
+
+#hello {
+  font-size: 200%;
+  color: white;
+  font-family: "Uchen", Helvetica, serif;
 }
 
 a,
@@ -87,11 +93,6 @@ h1 {
 
 a:hover {
   text-decoration: none;
-}
-
-#click-logo {
-  background-color: transparent;
-  border-color: transparent;
 }
 
 .logo {
@@ -116,8 +117,14 @@ button {
   color: white;
 }
 
-#white-duck-icon {
+.white-duck-icon {
   height: 60px;
+}
+
+#white-logo {
+  color: white;
+  font-family: "Ucher", Helvetica, serif;
+  size: 4em;
 }
 
 .title {
@@ -148,7 +155,7 @@ p {
 
 img,
 .box {
-  height: 300px;
+  height: 200px;
   border-radius: 10%;
 }
 
@@ -366,7 +373,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp */
 
 footer {
   margin-top: 10px;
-  padding: 50px 0 10px;
+  padding: 50px 100px 10px;
   position: relative;
 }
 
@@ -374,17 +381,12 @@ footer {
   color: white;
   text-align: right;
   margin: 30px;
-
-}
-
-.footer {
-    border-width: 1px 0;
-    list-style: none;
-    margin: 0;
-    padding: 0 100px;
-    text-align: center;
-    font-size: 100%;
-    letter-spacing: 3px;
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  font-size: 100%;
+  letter-spacing: 3px;
 }
 
 .footer li {
@@ -671,6 +673,9 @@ form p {
 }
 
 @media screen and (max-width: 550px) {
+  header {
+    padding: 20px;
+  }
   p.story {
     font-size: 70%;
   }
@@ -679,13 +684,13 @@ form p {
     flex-direction: column;
   }
   .container {
-        width: 80%;
+        width: auto;
         margin: 0 auto;
         display: flex;
         flex-flow: wrap column;
     }
 
-  #first-box {
+  div#first-box {
     padding: 0;
   }
 
@@ -694,7 +699,7 @@ form p {
 }
 
   .icons {
-    height: 60px;
+    height: 50px;
   }
 
    .box {

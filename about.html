@@ -28,14 +28,18 @@
 
     <div class="navbar-container">
 
-      <div class="navbar-child nav"><ul>
+      <div class="navbar-child nav">
 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <ul>
+
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
 
         <!-- Instruction on how to use site - this will open a modal -->
 
-        <li><button id="howTo"><h2>How to use this site</h2></button></li>
+        <li><button id="how-to">How to use this site</button></li>
+
+        </ul>
 
         <!-- The Modal - the id #myModel is used in the JavaScript file using the
         getElementById() method-->
@@ -52,22 +56,32 @@
             <span class="close">&times;</span>
 
             <!-- Paragraphs with instructions -->
-
+            <h4>Instructions</h4>
             <p>White Duck has been learning some new JavaScript tricks and he wants
-              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
+              to show them to you.
+              <br>
+              Whenever you see this icon <img class="white-duck-icon"
               src="./assets/images/white-duck-quacks.png"
               alt=""> you can click on it and see what happens! But be aware: he might be disguised!
-              <br>White Duck has been learning some new JavaScript tricks and he wants
-              to show them to you. <br> Whenever you see this icon <img id="white-duck-icon"
-              src="./assets/images/white-duck-quacks.png"
-              alt=""> you can click on it and see what happens! But be aware: he might be disguised!
+              <br><br>
+              List of tricks:
+              <br><br>
+              1 - Click on the logo to change the background colour. Click on it again
+              for a different colour. And again, and again...
+              <br><br>
+              2 - Click on any of the White Duck pictures in the first box for more
+              content.
+              <br><br>
+              3 - Click on the White Duck picture in the second box for a random story
+              featuring White Duck.
+              <br><br>
+              4 - Click on the little White Duck picture at the bottom of the page
+              to randomly see all the different White Duck costumes.
               <br></p>
 
           </div>
 
         </div>
-
-        </ul>
 
       </div>
 
@@ -80,29 +94,22 @@
         <div>
 
           <!-- The button is displayed as an icon - the class ".white-duck" is used
-          in the JavaScript file with the querySelector() method -->
-
-          <button class="white-duck">
-
-            <!-- When the mouse hovers the logo which consists of the words "White
+          in the JavaScript file with the querySelector() method
+          When the mouse hovers the icons which consists of the words "White
             Duck Says Hello!" on a blue background and the icon of a white duck, the
             icon changes slightly and changes back to the original once mouse no
             longer hovers. Two functions are needed for this as specified by the
             onMouseOver and onMouseOut events -->
 
-            <a href="#" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
-
+            <button class="white-duck" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
               <!-- Inside the img tag the name "jsbutton" is used in the JavaScript
               file in the images read-only property format. In this case it returns a
               specific image in this page as specified below in the src attribute-->
 
-              <h1>White Duck Says Hello!<img name="jsbutton" class="logo" class="color"
+              <h1>White Duck Says Hello!</h1><img id="jsbutton" class="logo"
                 src="./assets/images/white-duck-quacks.png" alt="javascript button">
-              </h1>
 
-            </a>
-
-          </button>
+            </button>
 
         </div>
 
@@ -174,7 +181,7 @@
        </form>
    </div>
 
- </form> 
+ </form>
 
   <!-- The footer contains a farewell message from White Duck and links
       to social media and Home and About pages -->

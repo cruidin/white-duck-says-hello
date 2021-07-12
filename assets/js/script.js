@@ -33,7 +33,7 @@ var logoImage = document.images['jsbutton'];
 
  // We create another variable and use the method getElementById to get the button
  // 'How to use this site' that opens the modal.
- var modalButton = document.getElementById('howTo');
+ var modalButton = document.getElementById('how-to');
 
  // This variable gets the <span> element that closes the modal by using the method
  // getElementsByClassName.
