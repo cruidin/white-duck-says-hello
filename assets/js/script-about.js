@@ -16,13 +16,13 @@ var logoImage = document.images['jsbutton'];
 
 // to change image when mouse hovers
  function changeImage() {
-   document.images['jsbutton'].src = './assets/images/white-duck-quack2.png';
+   document.images['jsbutton'].src = './assets/images/white-duck-quacks2.png';
    return true;
  }
 
 // to change back to the original image
  function changeImageBack() {
-   document.images['jsbutton'].src ='./assets/images/white-duck-outline.png'
+   document.images['jsbutton'].src ='./assets/images/white-duck-quacks.png'
  }
 
 // The Modal - a modal opens a window on the page
@@ -86,8 +86,8 @@ var footerImage = document.images['footerImage'];
    'assets/images/white-duck-love2.png',
    'assets/images/white-duck-monocle.png',
    'assets/images/white-duck-monocle2.png',
-   'assets/images/white-duck-outline.png',
-   'assets/images/white-duck-quack2.png',
+   'assets/images/white-duck-quacks.png',
+   'assets/images/white-duck-quacks2.png',
    'assets/images/white-duck-wizard.png',
    'assets/images/white-duck-wizard2.png',
    'assets/images/white-duck-apple.png',
