@@ -32,8 +32,8 @@
 
         <ul>
 
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
 
         <!-- Instruction on how to use site - this will open a modal -->
 
@@ -91,7 +91,7 @@
         how to make an image act as a button in js
         https://www.javascript-coder.com/button/javascript-button-p1/ -->
 
-        <div>
+        <div id="blue">
 
           <!-- The button is displayed as an icon - the class ".white-duck" is used
           in the JavaScript file with the querySelector() method
@@ -101,12 +101,12 @@
             longer hovers. Two functions are needed for this as specified by the
             onMouseOver and onMouseOut events -->
 
-            <button class="white-duck" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
+            <button id="hello" class="white-duck" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
               <!-- Inside the img tag the name "jsbutton" is used in the JavaScript
               file in the images read-only property format. In this case it returns a
               specific image in this page as specified below in the src attribute-->
 
-              <h1>White Duck Says Hello!</h1><img id="jsbutton" class="logo"
+              White Duck Says Hello!<img id="jsbutton" class="logo"
                 src="./assets/images/white-duck-quacks.png" alt="javascript button">
 
             </button>

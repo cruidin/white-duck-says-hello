@@ -1,7 +1,7 @@
 # White Duck Says Hello!
 
 
-![club logo](/assets/images/White-duck-outline.png)
+![club logo](/assets/images/white-duck-quacks.png)
 
 ## Table of contents
 
@@ -41,7 +41,7 @@ Because I have been struggling to understand JavaScript I decided to keep it sim
 
 It comprises of 2 different sections, displayed in boxes, plus some extra simple effects like changing the background colour of the pages.
 
-This project was conceived as a response to our JavaScript Essentials Porfolio 2 project at The Code Institute for their Full Stack Web Development Program. It comprises of an interactive front-end website.
+This project was conceived as a response to our JavaScript Essentials Porfolio 2 project at The Code Institute for their Full Stack Web Development Program. It comprises of an interactive front-end website, written in HTML, CSS and JavaScript.
 
 [Back to the top](#white-duck-says-hello)
 
@@ -172,7 +172,7 @@ About page contains:
 
 ### Additional Comments
 
-I went from being extremely confused, overwhelmed and frustrated by JavaScript to being a bit less confused, overwhelmed and frustrated, which about a week ago I never thought I would make any progress.
+I went from being extremely confused, overwhelmed and frustrated by JavaScript to being slightly less confused, overwhelmed and frustrated, which about a week ago I never thought I would make any progress.
 
 ### Future Features:
 
