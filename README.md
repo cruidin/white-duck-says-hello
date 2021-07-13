@@ -77,8 +77,6 @@ It took me an awful long time to "get" JavaScript. And when I say that, I mean t
 
 I started off with a very simple idea of changing the background colour of a page. Then I started to build upon this until I arrived at the final product.
 
-For an overview of some of the thought process involved in drawing up a plan for the project please consult this [PDF]().
-
 #### Strategy
 
 **Audiences**
@@ -116,8 +114,8 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 **Balsamiq wireframes**
 
-![main image](/assets/README/home.png)
-![main image](/assets/README/about.png)
+![main image](/assets/README/Home.png)
+![main image](/assets/README/About.png)
 ![main image](/assets/README/phone-home.png)
 ![main image](/assets/README/phone-about.png)
 ![main image](/assets/README/tablet-home.png)
@@ -133,15 +131,17 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 Vibrant and bold colours were chosen for this project to match with the simple and bold illustrations.
 ￼
+
 **Typography**
 
 The fonts used were Roboto Mono and Uchen, with Helvetica as a fall back.
+
 
 **Illustrations**
 
 All illustrations were made by me for the purpose of this project. The illustrations are digital and were made on Procreate, iPad. Basically, the same image of White Duck is used over and over again with added accessories and props. The idea is to convey a sense of humour and simplicity in accordance with the very simplistic approach taken in the use of JavaScript. The illustrations were saved on .png format to make use of the transparent background feature, which was a requirement for the purpose of this particular website.
 
-![main image](/assets/images/white-duck-wizard.jpg)
+![main image](/assets/images/white-duck-wizard.png)
 ￼
 [Back to the top](#white-duck-says-hello)
 
@@ -217,7 +217,8 @@ I can see great potential for developing this project further in the future. Fir
 
 ## Troubles
 
-*
+* Overall, I found this project extremely challenging to the point where it makes me wonder if I will ever
+get better at programming. I kept trying to add more advanced features but only to find myself out of my depth each time. In the end I decided to settle for something very basic but to make it tastefully and have a bit of fun while doing it. I dedicated many more hours to this project than I should have, probably, and got stuck several times trying to fix something. I like the end result but I do acknowledge that it might not be good enough.
 
 [Back to the top](#white-duck-says-hello)
 
@@ -228,10 +229,18 @@ I can see great potential for developing this project further in the future. Fir
 * CSS3
 * JavaScript
 
-#### JavaScript Features
+### List of files
+* index.html
+* about.html
+* script.js
+* script-about.js
+* style.css
+
+
+### JavaScript Features
 
 1. At the top in both the Home and About pages, there is the logo on both home and about pages. When the mouse hovers the duck the image changes and changes back once the mouse is no longer hovering it.
-```javascript```
+```
 var logoImage = document.images['jsbutton'];
 
  function changeImage() {
@@ -244,11 +253,11 @@ var logoImage = document.images['jsbutton'];
  }
 ```
 The functions changeImage() and changeImageBack() are called in the html document
-```html```
+```
   <button id="hello" class="white-duck" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
 ```
 The logo is clickable and will change the background colour of the active page.
-```javascript```
+```
 var colors = ['#FF5733', '#FFBD33', '#334bff', '#FF5733', '#FF8A33', '#FFBD33',
 '#5e6aad', '#905ead', '#ad3e3e', '#55701f', '#1f7033', '#1f2a70', '#701f5e'];
 
@@ -260,7 +269,7 @@ document.querySelector('body').style.background = colors[i]
 })
 ```
 1. Above the logo in both the Home and About pages, there is a link with simple instructions on how to use the site and a list of the features being described here. Upon a click, it will open a modal window.
-```javascript```
+```
 var modal = document.getElementById('myModal');
 var modalButton = document.getElementById('how-to');
 var span = document.getElementsByClassName('close')[0];
@@ -275,7 +284,7 @@ span.onclick = function() {
 ```
 1. In the container in the Home page only, there are two boxes. The first contains 9 small icons of White Duck in various costumes. When the mouse hovers each icon it changes and changes back once mouse is no longer hovering it.
 1. In the second box in the container in the Home page only, there’s a random story generator that works by clicking on the single White Duck icon. A new story is generated every time the icon is clicked on. The same mouse hover feature used before is being used here.
-```javascript```
+```
 let randomStory = document.querySelector('.random-story');
 let story = document.querySelector('.story');
 
@@ -357,7 +366,7 @@ function result() {
   }
 ```
 1. At the footer in both Home and About pages, there’s the last feature in which the small White Duck can be clicked on to randomly display a new bigger picture of White Duck.
-```javascript```
+```
 const imageArray = [
   'assets/images/white-duck-chill.png',
   'assets/images/white-duck-chill2.png',
