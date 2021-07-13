@@ -217,7 +217,7 @@ I can see great potential for developing this project further in the future. Fir
 
 ## Troubles
 
-* 
+*
 
 [Back to the top](#white-duck-says-hello)
 
@@ -227,6 +227,177 @@ I can see great potential for developing this project further in the future. Fir
 * HTML5
 * CSS3
 * JavaScript
+
+#### JavaScript Features
+
+1. At the top in both the Home and About pages, there is the logo on both home and about pages. When the mouse hovers the duck the image changes and changes back once the mouse is no longer hovering it.
+```javascript```
+var logoImage = document.images['jsbutton'];
+
+ function changeImage() {
+   document.images['jsbutton'].src = './assets/images/white-duck-quacks2.png';
+   return true;
+ }
+
+ function changeImageBack() {
+   document.images['jsbutton'].src ='./assets/images/white-duck-quacks.png'
+ }
+```
+The functions changeImage() and changeImageBack() are called in the html document
+```html```
+  <button id="hello" class="white-duck" onMouseOver="return changeImage()" onMouseOut= "return changeImageBack()">
+```
+The logo is clickable and will change the background colour of the active page.
+```javascript```
+var colors = ['#FF5733', '#FFBD33', '#334bff', '#FF5733', '#FF8A33', '#FFBD33',
+'#5e6aad', '#905ead', '#ad3e3e', '#55701f', '#1f7033', '#1f2a70', '#701f5e'];
+
+var i = 0;
+
+document.querySelector('.white-duck').addEventListener('click', function() {
+  i = i < colors.length ? ++i : 0;
+document.querySelector('body').style.background = colors[i]
+})
+```
+1. Above the logo in both the Home and About pages, there is a link with simple instructions on how to use the site and a list of the features being described here. Upon a click, it will open a modal window.
+```javascript```
+var modal = document.getElementById('myModal');
+var modalButton = document.getElementById('how-to');
+var span = document.getElementsByClassName('close')[0];
+
+modalButton.onclick = function() {
+  modal.style.display = 'block';
+}
+
+span.onclick = function() {
+  modal.style.display = 'none';
+}
+```
+1. In the container in the Home page only, there are two boxes. The first contains 9 small icons of White Duck in various costumes. When the mouse hovers each icon it changes and changes back once mouse is no longer hovering it.
+1. In the second box in the container in the Home page only, there’s a random story generator that works by clicking on the single White Duck icon. A new story is generated every time the icon is clicked on. The same mouse hover feature used before is being used here.
+```javascript```
+let randomStory = document.querySelector('.random-story');
+let story = document.querySelector('.story');
+
+function randomValueFromArray(array){
+  const random = Math.floor(Math.random() * array.length);
+  return array[random];
+}
+
+let storyText = "Once upon a time, there was an enigmatic creature in town. One day, :insert1:. :insert2: because :insert3: But the day after, :insert4: After that, they finally found out who was behind it all: it was White Duck :insert5:. Then all people were :insert6: The end.";
+
+let insert1 = ["there was a raging storm",
+"an apple hit a house",
+"the sky turned green",
+"the dice were rolled",
+"a firefly was tired"];
+
+let insert2 = ["There was a terrible commotion amongst the people",
+"Everybody started to laugh",
+"The people screamed and shut their eyes",
+"Nobody could understand what was going on",
+"Someone did a fart"];
+
+let insert3 = ["they were all hungry and tired.",
+"they wanted to dance all night long.",
+"the expiry date was last month.",
+"everybody fainted.",
+"no one was harmed."];
+
+let insert4 = ["the moon disappeared.",
+"the flowers grew taller than the mountains.",
+"everything turned yellow.",
+"the grapes tasted funny.",
+"the sky collapsed and squashed the world.",
+"everyone decided to play rolly polly down the hill.",
+"they all feasted on pineapples."
+];
+
+let insert5 = ["dressed up as a mermaid",
+"in a wizard costume",
+"in wooly hat and scarf",
+"wearing cool sunglasses",
+"disguised as an apple",
+"covered in leaves",
+"who had fallen in love",
+"wearing a monocle and a fake moustache",
+"holding an umbrella",
+];
+
+let insert6 = ["happy ever after.",
+"sad ever after.",
+"very cranky.",
+"so sore they had to go to hospital.",
+"dead after that.",
+"really mad at him.",
+"relieved."];
+
+randomStory.addEventListener('click', result);
+
+function result() {
+
+    let newStory = storyText;
+    let oneItem = randomValueFromArray(insert1);
+    let twoItem = randomValueFromArray(insert2);
+    let threeItem = randomValueFromArray(insert3);
+    let fourItem = randomValueFromArray(insert4);
+    let fiveItem = randomValueFromArray(insert5);
+    let sixItem = randomValueFromArray(insert6);
+
+    newStory = newStory.replace(/:insert1:/g, oneItem);
+		newStory = newStory.replace(":insert2:", twoItem);
+		newStory = newStory.replace(":insert3:", threeItem);
+    newStory = newStory.replace(":insert4:", fourItem);
+		newStory = newStory.replace(":insert5:", fiveItem);
+    newStory = newStory.replace(":insert6:", sixItem);
+
+  story.textContent = newStory;
+  story.style.visibility = 'visible';
+
+  }
+```
+1. At the footer in both Home and About pages, there’s the last feature in which the small White Duck can be clicked on to randomly display a new bigger picture of White Duck.
+```javascript```
+const imageArray = [
+  'assets/images/white-duck-chill.png',
+  'assets/images/white-duck-chill2.png',
+  'assets/images/white-duck-glasses.png',
+  'assets/images/white-duck-glasses2.png',
+  'assets/images/white-duck-leaves.png',
+  'assets/images/white-duck-leaves2.png',
+  'assets/images/white-duck-love.png',
+  'assets/images/white-duck-love2.png',
+  'assets/images/white-duck-monocle.png',
+  'assets/images/white-duck-monocle2.png',
+  'assets/images/white-duck-quacks.png',
+  'assets/images/white-duck-quacks2.png',
+  'assets/images/white-duck-wizard.png',
+  'assets/images/white-duck-wizard2.png',
+  'assets/images/white-duck-apple.png',
+  'assets/images/white-duck-apple2.png',
+  'assets/images/white-duck-umbrella.png',
+  'assets/images/white-duck-umbrella2.png',
+  'assets/images/white-duck-mermaid.png',
+  'assets/images/white-duck-mermaid2.png',
+  'assets/images/white-duck-sad.png',
+  'assets/images/white-duck-sad2.png',
+  'assets/images/white-duck-reading.png',
+  'assets/images/white-duck-reading2.png'
+];
+
+const image = document.querySelector('#firstImage');
+const button = document.querySelector('#firstBtn');
+
+window.onload = () => generateRandomPicture(imageArray);
+
+button.addEventListener('click', () => generateRandomPicture(imageArray));
+
+function generateRandomPicture(array){
+ let randomNum = Math.floor(Math.random() * array.length);
+ image.setAttribute('src', array[randomNum]);
+}
+```
+
 
 [Back to the top](#white-duck-says-hello)
 
@@ -259,15 +430,17 @@ All texts were written by me, Patricia Melo (developer and artist)
 * [Source Decoded](https://www.youtube.com/channel/UCl0hPcsUmeld49qmWWSQKOg/playlists)
 * [Free Code Camp](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)
 * [errosea](https://errorsea.com/how-to-change-text-onclick-event-javascript/)
+* [HTML validator](https://validator.w3.org/nu/)
+* [CSS validator](http://www.css-validator.org/)
 
 
-*Note:* Even though the best efforts have been made to acknowledge all the websites, articles and codes used for this project, it is possible that some of them haven't been listed here. If that is the case, I sincerely apologise and am eager to correct the mistake.
+*Note:* Even though the best efforts have been made to acknowledge all the websites, articles and codes used for this project, it is possible that some of them haven't been listed here. If that is the case, I sincerely apologise.
 
 [Back to the top](#white-duck-says-hello)
 
 ## Acknowledgements
 
-
+I would like to thank my mentor, Seun, for her help and to the Code Institute Student Care people for their support when I needed it.
 
 [Back to the top](#white-duck-says-hello)
 
