@@ -25,31 +25,32 @@ var logoImage = document.images['jsbutton'];
    document.images['jsbutton'].src ='./assets/images/white-duck-quacks.png'
  }
 
-// The Modal - a modal opens a window on the page
-// We create a variable with the method getElementById to return the element
-// that has the ID of myModal on index.html.
-var modal = document.getElementById('myModal');
+ // The Modal - a modal opens a window on the page
+ // We create a variable with the method getElementById to return the element
+ // that has the ID of myModal on index.html.
+ var modal = document.getElementById('myModal');
 
-// We create another variable and use the method getElementById to get the button
-// 'How to use this site' that opens the modal.
-var modalButton = document.getElementById('howTo');
+ // We create another variable and use the method getElementById to get the button
+ // 'How to use this site' that opens the modal.
+ var modalButton = document.getElementById('how-to');
 
-// This variable gets the <span> element that closes the modal by using the method
-// getElementsByClassName.
-var span = document.getElementsByClassName('close')[0];
+ // This variable gets the <span> element that closes the modal by using the method
+ // getElementsByClassName.
+ var span = document.getElementsByClassName('close')[0];
 
-// This function will open the modal when the user clicks on 'How to use this site'.
-// The style.display property is set to 'block' which means the element is rendered
-// as a block-level. The onclick is being used here.
-modalButton.onclick = function() {
-  modal.style.display = 'block';
-}
+ // This function will open the modal when the user clicks on 'How to use this site'.
+ // The style.display property is set to 'block' which means the element is rendered
+ // as a block-level. The onclick is being used here.
+ modalButton.onclick = function() {
+   modal.style.display = 'block';
+ }
 
-// This will close the modal when the user clicks on <span> (x). The onclick event
-// is being used here.
-span.onclick = function() {
-  modal.style.display = 'none';
-}
+ // This will close the modal when the user clicks on <span> (x). The onclick event
+ // is being used here.
+ span.onclick = function() {
+   modal.style.display = 'none';
+ }
+
 
 // The modal will close when user clicks anywhere outside of modal
 window.onclick = function(event) {
@@ -71,7 +72,6 @@ var footerImage = document.images['footerImage'];
  function changeFooterImageBack() {
    document.images['footerImage'].src ='./assets/images/white-duck-sad.png'
  }
-
 
  // code for changing boxes.
  // Array with images to be changed randomly

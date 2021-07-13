@@ -33,15 +33,15 @@
 
 ## Introduction </a>
 
-White Duck Says Hello! is a humourous two page website about a duck who is learning JavaScript and wants to show off the new skills he can do.
+White Duck Says Hello! is a humorous two page website about a duck who is learning JavaScript and wants to show off the new tricks he can do.
 
 The basic idea for this project is to tell simple interactive stories through words and illustrations.
 
 Because I have been struggling to understand JavaScript I decided to keep it simple and try to make the most of it.
 
-It comprises of 2 different sections, displayed in boxes, plus some extra simple effects like changing the background colour of the pages.
+The main page comprises of 2 different sections, displayed in boxes, plus some extra simple effects like changing the background colour of the pages.
 
-This project was conceived as a response to our JavaScript Essentials Porfolio 2 project at The Code Institute for their Full Stack Web Development Program. It comprises of an interactive front-end website, written in HTML, CSS and JavaScript.
+This project was conceived as a response to our JavaScript Essentials Porfolio 2 project at The Code Institute for their Full Stack Web Development Program. It is an interactive front-end website, written in HTML, CSS and JavaScript.
 
 [Back to the top](#white-duck-says-hello)
 
@@ -87,7 +87,6 @@ For an overview of some of the thought process involved in drawing up a plan for
 * Family, friends and acquaintances
 * Young families
 
-
 **What the user needs to achieve**
 * Stay engaged:
     * Interact with the site
@@ -113,10 +112,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 #### Structure
 
-
-￼
 **Skeleton**
-
 
 **Balsamiq wireframes**
 
@@ -129,7 +125,7 @@ For an overview of some of the thought process involved in drawing up a plan for
 
 **iPad drawing**
 
-
+![main image](/assets/README/ipad-drawing.jpg)
 
 #### Design
 
@@ -143,7 +139,7 @@ The fonts used were Roboto Mono and Uchen, with Helvetica as a fall back.
 
 **Illustrations**
 
-All illustrations were made by me for the purpose of this project. The illustrations are digital and were made on Procrete, iPad. Basically, the same image of White Duck is used over and over again with added accessories and props. The idea is to convey a sense of humour and simplicity in accordance with the very simplistic approach taken in the use of JavaScript. The illustrations were saved on .png format to make use of the transparent background feature, which was a requirement for the purpose of this particular website.
+All illustrations were made by me for the purpose of this project. The illustrations are digital and were made on Procreate, iPad. Basically, the same image of White Duck is used over and over again with added accessories and props. The idea is to convey a sense of humour and simplicity in accordance with the very simplistic approach taken in the use of JavaScript. The illustrations were saved on .png format to make use of the transparent background feature, which was a requirement for the purpose of this particular website.
 
 ![main image](/assets/images/white-duck-wizard.jpg)
 ￼
@@ -169,10 +165,13 @@ Home page contains:
 About page contains:
 * Brief introduction about me, Patricia Melo, the developer
 * Brief explanation about the project
+* A form
 
 ### Additional Comments
 
 I went from being extremely confused, overwhelmed and frustrated by JavaScript to being slightly less confused, overwhelmed and frustrated, which about a week ago I never thought I would make any progress.
+
+Unfortunately I ran out of time and wasn't able to finish this project properly.
 
 ### Future Features:
 
@@ -187,25 +186,38 @@ I can see great potential for developing this project further in the future. Fir
 
 ### Desktops
 
-
+![main image](/assets/README/desktop.jpg)
+![main image](/assets/README/footer.jpg)
 
 ### Laptops
 
-
+![main image](/assets/README/laptop.jpg)
+![main image](/assets/README/laptop2.jpg)
+![main image](/assets/README/laptop3.jpg)
 
 ### Tablets
 
-
+![main image](/assets/README/iPad.jpg)
+![main image](/assets/README/iPad2.jpg)
 
 ### Mobiles
 
+![main image](/assets/README/mobile.jpg)
+![main image](/assets/README/mobile2.jpg)
+![main image](/assets/README/mobile3.jpg)
+![main image](/assets/README/mobile4.jpg)
+
+### Modals
+
+![main image](/assets/README/modal.jpg)
+![main image](/assets/README/modal2.jpg)
 
 [Back to the top](#white-duck-says-hello)
 
 
 ## Troubles
 
-
+* 
 
 [Back to the top](#white-duck-says-hello)
 
