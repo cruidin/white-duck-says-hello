@@ -459,6 +459,6 @@ My name is Patricia Melo. I am an artist and I am a Software Development student
 
 *******
 
-![love](/assets/images/White-duck-quack2.png)
+![white-duck](/assets/images/white-duck-apple2.png)
 
 [Back to the top](#white-duck-says-hello)
